@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-gradient-to-br from-white via-slate-50 to-sky-50 text-slate-800 min-h-screen; }
+.card { @apply bg-white border border-slate-200 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.06)] p-6; }
+.section-head { @apply text-slate-900 font-semibold text-lg flex items-center gap-2; }
+.input { @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-2 text-slate-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-400; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 transition; }
+.btn-primary { @apply btn bg-sky-600 text-white hover:bg-sky-700; }
+.btn-muted { @apply btn bg-slate-100 text-slate-700 hover:bg-slate-200; }
+.badge { @apply inline-flex items-center rounded-full bg-slate-100 text-slate-600 px-3 py-1 text-xs; }
+.ad { @apply card bg-slate-50 text-slate-500 text-xs flex items-center justify-center; }
