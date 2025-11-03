@@ -1,4 +1,4 @@
-// File: /home/ahmad/Downloads/time-date-ultimate-mongo/frontend/app/admin/layout.jsx
+// File: /home/ahmad/Desktop/globalTime/frontend/app/admin/layout.jsx
 import * as entry from '../../../../app/admin/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

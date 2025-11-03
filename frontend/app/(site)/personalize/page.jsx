@@ -1,6 +1,7 @@
 /* app/personalize/page.jsx */
 "use client";
-import { useEffect, useMemo, useState } from "react";
+
+import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Trash2, Globe, Clock as ClockIcon, Search } from "lucide-react";
 import { DateTime } from "luxon";
@@ -12,29 +13,67 @@ import DigitalClock from "../../../components/DigitalClock";
 import ThemePicker from "../../../components/ThemePicker";
 import { COUNTRIES } from "../countryData";
 
-const ALL_THEMES = ["classic", "neon", "minimal", "sunset", "matrix", "glass", "royal"];
+const ALL_THEMES = [
+  "classic",
+  "neon",
+  "minimal",
+  "sunset",
+  "matrix",
+  "glass",
+  "royal",
+];
+
+/* responsive helper */
+function useIsSmall() {
+  const [small, setSmall] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 640px)");
+    const onChange = (e) => setSmall(e.matches);
+    setSmall(mq.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+  return small;
+}
 
 export default function Personalize() {
   const { token } = useAuth();
+  const isSmall = useIsSmall();
+  const previewSize = isSmall ? 168 : 228; // analog live preview
+  const thumbSize = isSmall ? 90 : 120; // analog tile
+
   const [list, setList] = useState([]);
-  const [type, setType] = useState("analog");
+  const [type, setType] = useState("analog"); // "analog" | "digital"
   const [theme, setTheme] = useState("classic");
   const [label, setLabel] = useState("");
-  const [filter, setFilter] = useState("");
+  const [notice, setNotice] = useState("");
 
+  // country + zone
   const localZone = useMemo(() => DateTime.local().zoneName, []);
   const initialCountry = useMemo(() => {
     const hit = COUNTRIES.find((c) => c.timeZone === localZone);
     return hit ? hit.country : "Pakistan";
   }, [localZone]);
   const [country, setCountry] = useState(initialCountry);
-
   const timeZone = useMemo(() => {
     const c = COUNTRIES.find((x) => x.country === country);
     return c ? c.timeZone : localZone;
   }, [country, localZone]);
 
-  const [notice, setNotice] = useState("");
+  // searchable country list
+  const [filter, setFilter] = useState("");
+  const [openSuggest, setOpenSuggest] = useState(false);
+  const suggestRef = useRef(null);
+
+  // close suggestions when clicking outside
+  useEffect(() => {
+    function onDocClick(e) {
+      if (!suggestRef.current) return;
+      if (!suggestRef.current.contains(e.target)) setOpenSuggest(false);
+    }
+    document.addEventListener("mousedown", onDocClick);
+    return () => document.removeEventListener("mousedown", onDocClick);
+  }, []);
 
   async function load() {
     try {
@@ -66,7 +105,10 @@ export default function Personalize() {
         setNotice("Guest limit reached (2). Log in to save more.");
         return;
       }
-      const newC = { _id: "guest-" + Math.random().toString(36).slice(2), ...payload };
+      const newC = {
+        _id: "guest-" + Math.random().toString(36).slice(2),
+        ...payload,
+      };
       const updated = [newC, ...list];
       setList(updated);
       saveGuest(updated);
@@ -101,8 +143,8 @@ export default function Personalize() {
   }
 
   const filteredCountries = useMemo(() => {
-    if (!filter.trim()) return COUNTRIES;
-    const f = filter.toLowerCase();
+    const f = filter.trim().toLowerCase();
+    if (!f) return COUNTRIES;
     return COUNTRIES.filter((c) => c.country.toLowerCase().includes(f));
   }, [filter]);
 
@@ -120,7 +162,7 @@ export default function Personalize() {
             Personalize your clocks
           </h1>
           <p className="text-sm text-slate-500">
-            Create, preview, and manage your world clocks. Smooth, fast, and friendly.
+            Create, preview, and manage your world clocks.
           </p>
         </div>
       </motion.div>
@@ -151,7 +193,8 @@ export default function Personalize() {
           <ClockIcon className="h-5 w-5" /> Create a personal clock
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-4">
+        {/* 1 col on small screens; 2 cols at lg */}
+        <div className="grid lg:grid-cols-2 gap-6 mt-4">
           {/* Left: form */}
           <div className="space-y-4">
             <input
@@ -161,6 +204,7 @@ export default function Personalize() {
               onChange={(e) => setLabel(e.target.value)}
             />
 
+            {/* Type */}
             <div>
               <div className="text-xs uppercase tracking-wide text-slate-500 mb-2">
                 Clock type
@@ -187,6 +231,7 @@ export default function Personalize() {
               </div>
             </div>
 
+            {/* Theme (don’t wrap ThemePicker in another grid) */}
             <div>
               <div className="text-xs uppercase tracking-wide text-slate-500 mb-2">
                 Theme
@@ -194,39 +239,80 @@ export default function Personalize() {
               <ThemePicker value={theme} onChange={setTheme} />
             </div>
 
-            {/* Country -> TimeZone */}
+            {/* Country */}
             <div>
               <div className="flex items-center justify-between mb-2">
                 <div className="text-xs uppercase tracking-wide text-slate-500">
                   Country
                 </div>
-                <div className="text-[10px] text-slate-400">Maps to IANA zone automatically</div>
+                <div className="text-[10px] text-slate-400">
+                  Maps to IANA zone automatically
+                </div>
               </div>
-              <div className="flex gap-2">
+
+              <div className="flex flex-col sm:flex-row gap-2" ref={suggestRef}>
                 <div className="relative flex-1">
                   <Globe className="absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
                   <input
                     placeholder="Filter countries..."
-                    className="w-full rounded-xl border pl-9 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                    className="w-full rounded-xl border pl-9 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
                     value={filter}
-                    onChange={(e) => setFilter(e.target.value)}
+                    onChange={(e) => {
+                      setFilter(e.target.value);
+                      setOpenSuggest(true);
+                    }}
+                    onFocus={() => setOpenSuggest(Boolean(filter.trim()))}
                   />
                   <Search className="absolute right-3 top-2.5 h-4 w-4 text-slate-400" />
+
+                  {/* Suggestions dropdown */}
+                  <AnimatePresence>
+                    {openSuggest && filter.trim() && (
+                      <motion.ul
+                        initial={{ opacity: 0, y: -4 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -4 }}
+                        className="absolute z-20 mt-1 max-h-64 w-full overflow-auto rounded-xl border bg-white shadow-lg"
+                      >
+                        {filteredCountries.slice(0, 14).map((c) => (
+                          <li
+                            key={c.country}
+                            className="px-3 py-2 text-sm hover:bg-slate-100 cursor-pointer"
+                            onMouseDown={() => {
+                              setCountry(c.country); // commit selection
+                              setFilter("");
+                              setOpenSuggest(false);
+                            }}
+                          >
+                            {c.country}
+                          </li>
+                        ))}
+                        {filteredCountries.length === 0 && (
+                          <li className="px-3 py-2 text-sm text-slate-500">
+                            No matches
+                          </li>
+                        )}
+                      </motion.ul>
+                    )}
+                  </AnimatePresence>
                 </div>
+
                 <select
-                  className="min-w-[12rem] rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                  className="w-full sm:w-auto sm:min-w-[12rem] rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
                   value={country}
                   onChange={(e) => setCountry(e.target.value)}
                 >
-                  {filteredCountries.map((c) => (
+                  {COUNTRIES.map((c) => (
                     <option key={c.country} value={c.country}>
                       {c.country}
                     </option>
                   ))}
                 </select>
               </div>
+
               <div className="text-xs text-slate-500 mt-2">
-                Selected time zone: <span className="font-mono">{timeZone}</span>
+                Selected time zone:{" "}
+                <span className="font-mono">{timeZone}</span>
               </div>
             </div>
 
@@ -238,32 +324,45 @@ export default function Personalize() {
             </button>
           </div>
 
-          {/* Right: live preview */}
+          {/* Right: live preview + theme previews */}
           <div className="space-y-3">
-            <div className="text-xs uppercase tracking-wide text-slate-500">Live preview</div>
+            <div className="text-xs uppercase tracking-wide text-slate-500">
+              Live preview
+            </div>
             <motion.div
               key={`${type}-${theme}-${timeZone}`}
               initial={{ opacity: 0, scale: 0.98, y: 4 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.25 }}
-              className="rounded-2xl border p-4 flex items-center justify-center"
+              className="rounded-2xl border p-4 flex items-center justify-center overflow-hidden"
             >
               {type === "analog" ? (
-                <AnalogClock timeZone={timeZone} theme={theme} size={220} smooth />
+                <AnalogClock
+                  timeZone={timeZone}
+                  theme={theme}
+                  size={previewSize}
+                  smooth
+                />
               ) : (
-                <DigitalClock timeZone={timeZone} theme={theme} />
+                <div className="w-full max-w-sm">
+                  <DigitalClock
+                    timeZone={timeZone}
+                    theme={theme}
+                    variant="display"
+                  />
+                </div>
               )}
             </motion.div>
 
             <div className="text-xs text-slate-500">Theme previews</div>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {ALL_THEMES.map((t) => (
                 <motion.button
                   key={t}
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => setTheme(t)}
-                  className={`group border rounded-xl p-3 text-left transition ${
+                  className={`group border rounded-xl p-3 text-left transition overflow-hidden min-h-[140px] ${
                     theme === t ? "ring-2 ring-sky-400" : ""
                   }`}
                 >
@@ -271,7 +370,23 @@ export default function Personalize() {
                     {t}
                   </div>
                   <div className="flex items-center justify-center">
-                    <AnalogClock timeZone={timeZone} theme={t} size={120} smooth={false} />
+                    {type === "analog" ? (
+                      <AnalogClock
+                        timeZone={timeZone}
+                        theme={t}
+                        size={thumbSize}
+                        smooth={false}
+                      />
+                    ) : (
+                      <div className="w-full max-w-[220px]">
+                        <DigitalClock
+                          timeZone={timeZone}
+                          theme={t}
+                          variant="tile"
+                          seconds={false}
+                        />
+                      </div>
+                    )}
                   </div>
                 </motion.button>
               ))}
@@ -288,7 +403,9 @@ export default function Personalize() {
         className="rounded-2xl border bg-white/80 backdrop-blur p-5 shadow-sm"
       >
         <div className="text-lg font-semibold">Your clocks</div>
-        <div className="text-xs text-slate-500 mb-3">Guests 2 (session) • Free=2 • Pro=4 • Admin=∞</div>
+        <div className="text-xs text-slate-500 mb-3">
+          Guests 2 (session) • Free=2 • Pro=4
+        </div>
 
         <AnimatePresence initial={false}>
           <div className="grid gap-4 md:grid-cols-3">
@@ -300,16 +417,23 @@ export default function Personalize() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.2 }}
-                className="border rounded-xl p-3"
+                className="border rounded-xl p-3 overflow-hidden"
               >
-                <div className="text-sm font-medium truncate" title={c.label || c.timeZone}>
+                <div
+                  className="text-sm font-medium truncate"
+                  title={c.label || c.timeZone}
+                >
                   {c.label || c.timeZone}
                 </div>
                 <div className="mt-2">
                   {c.type === "analog" ? (
                     <AnalogClock timeZone={c.timeZone} theme={c.theme} />
                   ) : (
-                    <DigitalClock timeZone={c.timeZone} theme={c.theme} />
+                    <DigitalClock
+                      timeZone={c.timeZone}
+                      theme={c.theme}
+                      variant="card"
+                    />
                   )}
                 </div>
                 <button
@@ -323,7 +447,8 @@ export default function Personalize() {
 
             {list.length === 0 && (
               <div className="col-span-full text-sm text-slate-500 border-dashed border rounded-xl p-6 flex items-center gap-3">
-                <ClockIcon className="h-4 w-4" /> No clocks yet. Create one above to get started.
+                <ClockIcon className="h-4 w-4" /> No clocks yet. Create one
+                above to get started.
               </div>
             )}
           </div>

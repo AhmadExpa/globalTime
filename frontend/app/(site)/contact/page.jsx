@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence, MotionConfig } from "framer-motion";
+import { submitContact } from "../../../lib/api";
 
 /**
  * CONTACT US — Professional UI (JavaScript + JSX)
@@ -41,9 +42,11 @@ export default function ContactUsPage() {
   // Simple validators
   const validators = {
     name: (v) => (v.trim().length < 2 ? "Please enter your full name." : ""),
-    email: (v) => (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? "" : "Enter a valid email."),
+    email: (v) =>
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? "" : "Enter a valid email.",
     subject: (v) => (v.trim().length < 3 ? "Subject is required." : ""),
-    message: (v) => (v.trim().length < 10 ? "Tell us a bit more (min 10 chars)." : ""),
+    message: (v) =>
+      v.trim().length < 10 ? "Tell us a bit more (min 10 chars)." : "",
     consent: (v) => (!v ? "You must agree to be contacted." : ""),
   };
 
@@ -72,26 +75,29 @@ export default function ContactUsPage() {
       setStatus({ type: "loading", msg: "Sending…" });
       submitBtnRef.current?.setAttribute("disabled", "true");
 
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          phone: form.phone,
-          topic: form.topic,
-          subject: form.subject,
-          message: form.message,
-          consent: form.consent,
-        }),
+      const res = await submitContact(form);
+      console.log(res);
+      if (!res.data.success) throw new Error("Request failed");
+
+      setStatus({
+        type: "success",
+        msg: "Thanks! We’ll get back to you shortly.",
       });
-
-      if (!res.ok) throw new Error("Request failed");
-
-      setStatus({ type: "success", msg: "Thanks! We’ll get back to you shortly." });
-      setForm({ name: "", email: "", phone: "", topic: "General", subject: "", message: "", consent: false, website: "" });
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        topic: "General",
+        subject: "",
+        message: "",
+        consent: false,
+        website: "",
+      });
     } catch (err) {
-      setStatus({ type: "error", msg: "Something went wrong. Please try again." });
+      setStatus({
+        type: "error",
+        msg: "Something went wrong. Please try again.",
+      });
     } finally {
       submitBtnRef.current?.removeAttribute("disabled");
       setTimeout(() => setStatus({ type: "idle", msg: "" }), 5000);
@@ -102,9 +108,22 @@ export default function ContactUsPage() {
     <MotionConfig reducedMotion="user">
       <main className="relative mx-auto max-w-6xl px-4 py-10 md:py-14">
         {/* Background accents */}
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 0.5, y: 0 }} transition={{ duration: 0.8, ease: EASING }} className="absolute -top-24 right-6 h-72 w-72 rounded-full bg-gradient-to-tr from-sky-200 via-cyan-100 to-white blur-3xl" />
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 0.4, y: 0 }} transition={{ duration: 0.8, ease: EASING }} className="absolute -bottom-24 left-6 h-80 w-80 rounded-full bg-gradient-to-tr from-fuchsia-200 via-pink-100 to-white blur-3xl" />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+        >
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 0.5, y: 0 }}
+            transition={{ duration: 0.8, ease: EASING }}
+            className="absolute -top-24 right-6 h-72 w-72 rounded-full bg-gradient-to-tr from-sky-200 via-cyan-100 to-white blur-3xl"
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 0.4, y: 0 }}
+            transition={{ duration: 0.8, ease: EASING }}
+            className="absolute -bottom-24 left-6 h-80 w-80 rounded-full bg-gradient-to-tr from-fuchsia-200 via-pink-100 to-white blur-3xl"
+          />
         </div>
 
         {/* Page header */}
@@ -123,7 +142,7 @@ export default function ContactUsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: EASING, delay: 0.05 }}
           >
-            Questions, feedback, or a project in mind? Fill out the form and our team will respond within one business day.
+            Questions, feedback, or a project in mind?
           </motion.p>
         </header>
 
@@ -138,7 +157,16 @@ export default function ContactUsPage() {
           >
             <form onSubmit={handleSubmit} noValidate className="space-y-6">
               {/* Honeypot */}
-              <input type="text" name="website" autoComplete="off" value={form.website} onChange={handleChange} className="hidden" tabIndex={-1} aria-hidden />
+              <input
+                type="text"
+                name="website"
+                autoComplete="off"
+                value={form.website}
+                onChange={handleChange}
+                className="hidden"
+                tabIndex={-1}
+                aria-hidden
+              />
 
               <div className="grid gap-4 md:grid-cols-2">
                 <Field label="Full name" htmlFor="name" error={errors.name}>
@@ -180,7 +208,13 @@ export default function ContactUsPage() {
                 </Field>
 
                 <Field label="Topic" htmlFor="topic">
-                  <select id="topic" name="topic" value={form.topic} onChange={handleChange} className="input">
+                  <select
+                    id="topic"
+                    name="topic"
+                    value={form.topic}
+                    onChange={handleChange}
+                    className="input"
+                  >
                     <option>General</option>
                     <option>Sales</option>
                     <option>Support</option>
@@ -226,17 +260,23 @@ export default function ContactUsPage() {
                   required
                 />
                 <label htmlFor="consent" className="text-sm text-slate-600">
-                  I agree to be contacted about my inquiry, and I consent to the processing of my information in accordance with the privacy policy.
+                  I agree to be contacted about my inquiry, and I consent to the
+                  processing of my information in accordance with the privacy
+                  policy.
                 </label>
               </div>
 
               {/* Placeholder for reCAPTCHA / turnstile */}
-              <div className="rounded-lg border border-dashed border-slate-300 p-3 text-xs text-slate-500">
+              {/* <div className="rounded-lg border border-dashed border-slate-300 p-3 text-xs text-slate-500">
                 Optional anti‑spam widget here (reCAPTCHA/Turnstile)
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-3">
-                <button ref={submitBtnRef} type="submit" className="btn-primary">
+                <button
+                  ref={submitBtnRef}
+                  type="submit"
+                  className="btn-primary"
+                >
                   Send message
                 </button>
                 <StatusPill status={status} />
@@ -253,29 +293,37 @@ export default function ContactUsPage() {
             className="md:col-span-2 space-y-6"
           >
             <div className="rounded-2xl border border-slate-200 bg-white/70 p-6 backdrop-blur">
-              <h2 className="text-base font-semibold text-slate-900">Get in touch</h2>
-              <p className="mt-2 text-sm text-slate-600">Prefer email or a quick call? We’ve got options.</p>
+              <h2 className="text-base font-semibold text-slate-900">
+                Get in touch
+              </h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Prefer email or a quick call? We’ve got options.
+              </p>
 
               <ul className="mt-4 space-y-3 text-sm">
                 <li className="flex items-center justify-between">
                   <span className="text-slate-600">Email</span>
-                  <a className="text-sky-700 hover:underline" href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+                  <a
+                    className="text-sky-700 hover:underline"
+                    href="mailto:hello@yourdomain.com"
+                  >
+                    hello@yourdomain.com
+                  </a>
                 </li>
                 <li className="flex items-center justify-between">
                   <span className="text-slate-600">Phone</span>
-                  <a className="text-sky-700 hover:underline" href="tel:+15550001234">+1 (555) 000‑1234</a>
+                  <a
+                    className="text-sky-700 hover:underline"
+                    href="tel:+15550001234"
+                  >
+                    +1 (555) 000‑1234
+                  </a>
                 </li>
                 <li className="flex items-center justify-between">
                   <span className="text-slate-600">Hours</span>
                   <span className="text-slate-700">Mon–Fri, 9:00–17:00</span>
                 </li>
               </ul>
-
-              <div className="mt-4 flex gap-3">
-                <Link href="#" className="btn-muted">Twitter</Link>
-                <Link href="#" className="btn-muted">LinkedIn</Link>
-                <Link href="#" className="btn-muted">GitHub</Link>
-              </div>
             </div>
 
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white/70 backdrop-blur">
@@ -292,9 +340,18 @@ export default function ContactUsPage() {
               <h3 className="text-base font-semibold text-slate-900">FAQs</h3>
               <Accordion
                 items={[
-                  { q: "When will I hear back?", a: "We reply within one business day. Complex requests may take a little longer." },
-                  { q: "Do you offer support SLAs?", a: "Yes—paid plans include response‑time guarantees. Tell us your needs in the form." },
-                  { q: "Can I schedule a demo?", a: "Absolutely. Choose 'Sales' as the topic and include a couple of times that work for you." },
+                  {
+                    q: "When will I hear back?",
+                    a: "We reply within one business day. Complex requests may take a little longer.",
+                  },
+                  {
+                    q: "Do you offer support SLAs?",
+                    a: "Yes—paid plans include response‑time guarantees. Tell us your needs in the form.",
+                  },
+                  {
+                    q: "Can I schedule a demo?",
+                    a: "Absolutely. Choose 'Sales' as the topic and include a couple of times that work for you.",
+                  },
                 ]}
               />
             </div>
@@ -310,7 +367,10 @@ function Field({ label, htmlFor, error, children }) {
   return (
     <div>
       <div className="flex items-center justify-between">
-        <label htmlFor={htmlFor} className="block text-sm font-medium text-slate-700">
+        <label
+          htmlFor={htmlFor}
+          className="block text-sm font-medium text-slate-700"
+        >
           {label}
         </label>
         <AnimatePresence initial={false}>
@@ -336,7 +396,12 @@ function Field({ label, htmlFor, error, children }) {
 
 function StatusPill({ status }) {
   if (status.type === "idle") return null;
-  const tone = status.type === "success" ? "bg-emerald-50 text-emerald-700 ring-emerald-200" : status.type === "error" ? "bg-rose-50 text-rose-700 ring-rose-200" : "bg-slate-50 text-slate-600 ring-slate-200";
+  const tone =
+    status.type === "success"
+      ? "bg-emerald-50 text-emerald-700 ring-emerald-200"
+      : status.type === "error"
+      ? "bg-rose-50 text-rose-700 ring-rose-200"
+      : "bg-slate-50 text-slate-600 ring-slate-200";
   return (
     <motion.span
       key={status.type + status.msg}
@@ -364,7 +429,9 @@ function Accordion({ items }) {
             aria-expanded={open === i}
           >
             {it.q}
-            <span className="ml-3 text-slate-400">{open === i ? "–" : "+"}</span>
+            <span className="ml-3 text-slate-400">
+              {open === i ? "–" : "+"}
+            </span>
           </button>
           <AnimatePresence initial={false}>
             {open === i && (

@@ -11,6 +11,8 @@ const navItems = [
   { href: "/admin/users", label: "Users", icon: UsersIcon },
   { href: "/admin/requests", label: "Requests", icon: RequestsIcon },
   { href: "/admin/newsletter", label: "Newsletter", icon: MailIcon },
+  { href: "/admin/contacts", label: "Contacts", icon: ChatIcon },
+  { href: "/admin/account", label: "Account", icon: SettingsIcon }
 ];
 
 export default function AdminRoot({ children }) {
@@ -157,3 +159,43 @@ function DashIcon(props){ return (<svg {...props} viewBox="0 0 24 24" className=
 function UsersIcon(props){ return (<svg {...props} viewBox="0 0 24 24" className={`h-4 w-4 ${props.className||""}`}><path d="M16 11c1.657 0 3-1.79 3-4s-1.343-4-3-4-3 1.79-3 4 1.343 4 3 4zM8 11c1.657 0 3-1.79 3-4S9.657 3 8 3 5 4.79 5 7s1.343 4 3 4zM8 13c-3.314 0-6 2.239-6 5v1h8v-1c0-1.657.672-3.157 1.757-4.243C10.803 13.29 9.45 13 8 13zm8 0c-1.451 0-2.804.29-3.757.757A6.96 6.96 0 0 1 14 18v1h8v-1c0-2.761-2.686-5-6-5z" fill="currentColor"/></svg>); }
 function RequestsIcon(props){ return (<svg {...props} viewBox="0 0 24 24" className={`h-4 w-4 ${props.className||""}`}><path d="M4 4h16v12H5.5L4 17.5V4zM8 9h8M8 13h6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/></svg>); }
 function MailIcon(props){ return (<svg {...props} viewBox="0 0 24 24" className={`h-4 w-4 ${props.className||""}`}><path d="M4 6h16v12H4z" stroke="currentColor" strokeWidth="2" fill="none"/><path d="M4 7l8 6 8-6" stroke="currentColor" strokeWidth="2" fill="none"/></svg>); }
+function ChatIcon(props) {
+  return (
+    <svg
+      {...props}
+      viewBox="0 0 24 24"
+      className={`h-4 w-4 ${props.className || ""}`}
+    >
+      <path
+        d="M4 5h16v10H6l-2 3v-3H4V5z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+      <path
+        d="M8 9h8M8 12h5"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+function SettingsIcon(props) {
+  return (
+    <svg
+      {...props}
+      viewBox="0 0 24 24"
+      className={`h-4 w-4 ${props.className || ""}`}
+    >
+      <path
+        d="M12 15.5A3.5 3.5 0 1 0 12 8.5a3.5 3.5 0 0 0 0 7zm7.94-1.06l1.43 1.43-1.94 1.94-1.43-1.43a7.95 7.95 0 0 1-1.9.78l-.29 2.04h-2.74l-.29-2.04a7.95 7.95 0 0 1-1.9-.78l-1.43 1.43-1.94-1.94 1.43-1.43a7.95 7.95 0 0 1-.78-1.9L4 12.29V9.55l2.04-.29a7.95 7.95 0 0 1 .78-1.9L5.39 5.93l1.94-1.94 1.43 1.43a7.95 7.95 0 0 1 1.9-.78L11.55 2h2.9l.29 2.04a7.95 7.95 0 0 1 1.9.78l1.43-1.43 1.94 1.94-1.43 1.43a7.95 7.95 0 0 1 .78 1.9L22 11.55v2.9l-2.06-.01a7.95 7.95 0 0 1-.78 1.9z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+

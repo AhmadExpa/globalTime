@@ -1,6 +1,8 @@
 const express = require('express');
+const bcrypt = require('bcryptjs');
 const auth = require('../middleware/auth');
 const User = require('../models/User');
+const ContactMessage = require('../models/ContactMessage');
 const Newsletter = require('../models/Newsletter');
 const UpgradeRequest = require('../models/UpgradeRequest');
 const nodemailer = require('nodemailer');
@@ -95,5 +97,64 @@ router.post('/requests/:id/unapprove', auth, requireAdmin, async (req, res) => {
     await User.updateOne({ _id: reqDoc.userId }, { $set: { role: 'free' } });
   }
   res.json({ success: true });
+});
+
+router.get('/contacts', auth, requireAdmin, async (req, res) => {
+  const page = Math.max(1, parseInt(req.query.page || '1', 10));
+  const limit = Math.min(100, Math.max(1, parseInt(req.query.limit || '20', 10)));
+  const q = (req.query.q || '').trim();
+
+  const filter = q ? {
+    $or: [
+      { email: { $regex: q, $options: 'i' } },
+      { name: { $regex: q, $options: 'i' } },
+      { subject: { $regex: q, $options: 'i' } },
+      { topic: { $regex: q, $options: 'i' } },
+    ]
+  } : {};
+
+  const total = await ContactMessage.countDocuments(filter);
+  const items = await ContactMessage.find(filter)
+    .sort({ createdAt: -1 })
+    .skip((page - 1) * limit)
+    .limit(limit)
+    .lean();
+
+  res.json({ total, items });
+});
+
+// Delete a contact message (admin only)
+router.delete('/contacts/:id', auth, requireAdmin, async (req, res) => {
+  await ContactMessage.findByIdAndDelete(req.params.id);
+  res.json({ success: true });
+});
+// Admin: change own email/password
+router.post('/account/update', auth, requireAdmin, async (req, res) => {
+  try {
+    const { email, currentPassword, newPassword } = req.body || {};
+    const adminUser = await User.findById(req.userId);
+    if (!adminUser) return res.status(404).json({ message: 'Not found' });
+
+    // If changing password, verify currentPassword
+    if (newPassword) {
+      if (!currentPassword) return res.status(400).json({ message: 'Current password required' });
+      const ok = await bcrypt.compare(currentPassword, adminUser.passwordHash);
+      if (!ok) return res.status(400).json({ message: 'Current password is incorrect' });
+      adminUser.passwordHash = await bcrypt.hash(newPassword, 10);
+    }
+
+    // If changing email, ensure unique
+    if (email && email !== adminUser.email) {
+      const exists = await User.findOne({ email });
+      if (exists) return res.status(400).json({ message: 'Email already in use' });
+      adminUser.email = email;
+    }
+
+    await adminUser.save();
+    res.json({ success: true });
+  } catch (e) {
+    console.error('Admin account update error:', e);
+    res.status(500).json({ message: 'Server error' });
+  }
 });
 module.exports = router;

@@ -60,7 +60,7 @@ export default function Footer() {
                   className="rounded-xl border border-slate-700 overflow-hidden bg-slate-800"
                 >
                   <Image
-                    src="/ads.jpg"
+                    src="/ads.png"
                     alt="Ad Space"
                     width={400}
                     height={150}

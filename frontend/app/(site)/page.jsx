@@ -293,7 +293,7 @@ export default function Home() {
               >
                 <div className="relative aspect-[6/2] w-full">
                   <Image
-                    src="/ads.jpg"
+                    src="/ads.png"
                     alt="Sponsored"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"

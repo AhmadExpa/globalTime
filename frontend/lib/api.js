@@ -8,9 +8,17 @@ export const fetchClocks = (token) => api.get('/api/clocks', { headers: { Author
 export const createClock = (token, body) => api.post('/api/clocks', body, { headers: { Authorization: `Bearer ${token}` } });
 export const updateClock = (token, id, body) => api.put(`/api/clocks/${id}`, body, { headers: { Authorization: `Bearer ${token}` } });
 export const deleteClock = (token, id) => api.delete(`/api/clocks/${id}`, { headers: { Authorization: `Bearer ${token}` } });
-export const fetchEvents = (token) => api.get('/api/events', { headers: { Authorization: `Bearer ${token}` } });
-export const createEvent = (token, body) => api.post('/api/events', body, { headers: { Authorization: `Bearer ${token}` } });
-export const deleteEvent = (token, id) => api.delete(`/api/events/${id}`, { headers: { Authorization: `Bearer ${token}` } });
+
+// ----- Events -----
+export const fetchEvents = (token) =>
+  api.get('/api/events', { headers: { Authorization: `Bearer ${token}` } });
+
+export const createEvent = (token, body) =>
+  api.post('/api/events', body, { headers: { Authorization: `Bearer ${token}` } });
+
+export const deleteEvent = (token, id) =>
+  api.delete(`/api/events/${id}`, { headers: { Authorization: `Bearer ${token}` } });
+
 export async function downloadEventPDF(token, id) {
   const res = await api.get(`/api/events/${id}/pdf`, {
     responseType: 'blob',
@@ -41,6 +49,18 @@ export async function downloadEventICS(token, id) {
   URL.revokeObjectURL(url);
 }
 
+// NEW: create/disable share link via backend (uses baseURL)
+export const createShareLink = (token, id, { expiresInDays = 30 } = {}) =>
+  api.post(`/api/events/${id}/share`, { enable: true, expiresInDays }, {
+    headers: { Authorization: `Bearer ${token}` },
+  }).then(r => r.data);
+
+export const disableShareLink = (token, id) =>
+  api.delete(`/api/events/${id}/share`, {
+    headers: { Authorization: `Bearer ${token}` },
+  }).then(r => r.data);
+
+// ----- Timers -----
 export const fetchTimers = (token) => api.get('/api/timers', { headers: { Authorization: `Bearer ${token}` } });
 export const createTimer = (token, body) => api.post('/api/timers', body, { headers: { Authorization: `Bearer ${token}` } });
 export const deleteTimer = (token, id) => api.delete(`/api/timers/${id}`, { headers: { Authorization: `Bearer ${token}` } });
@@ -95,4 +115,32 @@ export async function adminListUsers(token, { page = 1, limit = 10, q = '' } = {
     params: { page, limit, q },
   });
   return { data };
+}
+// Public: submit contact form
+export const submitContact = (payload) =>
+  api.post('/api/contact', payload);
+
+// Admin: list & delete contacts
+export async function adminListContacts(token, { page = 1, limit = 20, q = '' } = {}) {
+  const { data } = await api.get('/api/admin/contacts', {
+    headers: { Authorization: `Bearer ${token}` },
+    params: { page, limit, q },
+  });
+  return { data };
+}
+
+export async function adminDeleteContact(token, id) {
+  const { data } = await api.delete(`/api/admin/contacts/${id}`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return { data };
+}
+// --- Admin: update own email/password ---
+export async function adminUpdateAccount(token, { email, currentPassword, newPassword }) {
+  const { data } = await api.post(
+    '/api/admin/account/update',
+    { email, currentPassword, newPassword },
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  return data;
 }

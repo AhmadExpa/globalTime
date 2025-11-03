@@ -1,9 +1,8 @@
 {
-  "/(site)/login/page": "app/(site)/login/page.js",
-  "/(site)/account/page": "app/(site)/account/page.js",
-  "/admin/newsletter/page": "app/admin/newsletter/page.js",
-  "/(site)/timers/page": "app/(site)/timers/page.js",
-  "/admin/requests/page": "app/admin/requests/page.js",
-  "/(site)/newsletter/page": "app/(site)/newsletter/page.js",
-  "/(site)/page": "app/(site)/page.js"
+  "/(site)/contact/page": "app/(site)/contact/page.js",
+  "/(site)/page": "app/(site)/page.js",
+  "/admin/contacts/page": "app/admin/contacts/page.js",
+  "/admin/users/page": "app/admin/users/page.js",
+  "/admin/account/page": "app/admin/account/page.js",
+  "/(site)/login/page": "app/(site)/login/page.js"
 }

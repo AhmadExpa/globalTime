@@ -1,4 +1,4 @@
-// File: /home/ahmad/Downloads/time-date-ultimate-mongo/frontend/app/(site)/timers/page.jsx
+// File: /home/ahmad/Desktop/globalTime/frontend/app/(site)/timers/page.jsx
 import * as entry from '../../../../../app/(site)/timers/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
