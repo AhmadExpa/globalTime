@@ -2,14 +2,16 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Clock, Globe, Search, ArrowUpDown, LayoutGrid } from 'lucide-react';
+import { Clock, Globe, Search, ArrowUpDown, LayoutGrid, ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight } from 'lucide-react';
 
 // Adjust these to your project structure
-
 import { worldClockDiff } from '../../../lib/api';
 import { COUNTRIES } from '../countryData';
 
 export default function TimeDifference() {
+  // ==== NEW: pagination (100 per page) ====
+  const PAGE_SIZE = 100;
+
   // default to Pakistan → Asia/Karachi
   const defaultCountry = useMemo(
     () => COUNTRIES.find(c => c.country === 'Pakistan') ?? COUNTRIES[0],
@@ -29,6 +31,7 @@ export default function TimeDifference() {
   const [sortKey, setSortKey] = useState('diff'); // 'diff' | 'country'
   const [sortAsc, setSortAsc] = useState(true);
   const [now, setNow] = useState(new Date());
+  const [page, setPage] = useState(1); // NEW
 
   async function load() {
     const { data } = await worldClockDiff(baseTZ);
@@ -60,6 +63,26 @@ export default function TimeDifference() {
     return f;
   }, [rows, q, sortKey, sortAsc]);
 
+  // ==== NEW: derive total pages & current slice ====
+  const totalPages = useMemo(
+    () => Math.max(1, Math.ceil(filtered.length / PAGE_SIZE)),
+    [filtered.length]
+  );
+
+  // Clamp / reset page when dependencies change
+  useEffect(() => {
+    setPage(1);
+  }, [q, sortKey, sortAsc, baseTZ]);
+
+  useEffect(() => {
+    if (page > totalPages) setPage(totalPages);
+  }, [page, totalPages]);
+
+  const paged = useMemo(() => {
+    const start = (page - 1) * PAGE_SIZE;
+    return filtered.slice(start, start + PAGE_SIZE);
+  }, [filtered, page]);
+
   const baseDisplayTime = useMemo(() => {
     try {
       return new Intl.DateTimeFormat(undefined, {
@@ -79,6 +102,77 @@ export default function TimeDifference() {
     hidden: { opacity: 0, y: 8 },
     show: { opacity: 1, y: 0, transition: { duration: 0.18 } },
   };
+
+  // ==== NEW: Pagination UI component ====
+  function Pager() {
+    const from = (page - 1) * PAGE_SIZE + 1;
+    const to = Math.min(page * PAGE_SIZE, filtered.length);
+
+    const jumpTo = (p) => setPage(Math.min(Math.max(1, p), totalPages));
+
+    // helper to build numbered buttons around current page
+    const windowSize = 5; // show up to 5 numeric pages around current
+    const half = Math.floor(windowSize / 2);
+    const start = Math.max(1, Math.min(page - half, totalPages - windowSize + 1));
+    const end = Math.min(totalPages, start + windowSize - 1);
+    const pages = Array.from({ length: end - start + 1 }, (_, i) => start + i);
+
+    return (
+      <div className="flex flex-wrap items-center gap-2 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
+        <span className="text-xs text-slate-600 mr-2">
+          Showing <span className="font-medium">{filtered.length ? from.toLocaleString() : 0}</span>–
+          <span className="font-medium">{to.toLocaleString()}</span> of{' '}
+          <span className="font-medium">{filtered.length.toLocaleString()}</span>
+          {' '}· {PAGE_SIZE} per page
+        </span>
+        <div className="ml-auto flex items-center gap-1">
+          <button
+            onClick={() => jumpTo(1)}
+            disabled={page === 1}
+            className={`inline-flex items-center rounded-lg border px-2 py-1 text-sm ${page === 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-slate-50'}`}
+            title="First page"
+          >
+            <ChevronsLeft className="h-4 w-4" />
+          </button>
+          <button
+            onClick={() => jumpTo(page - 1)}
+            disabled={page === 1}
+            className={`inline-flex items-center rounded-lg border px-2 py-1 text-sm ${page === 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-slate-50'}`}
+            title="Previous page"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+
+          {pages.map(p => (
+            <button
+              key={p}
+              onClick={() => jumpTo(p)}
+              className={`min-w-[2rem] rounded-lg border px-2 py-1 text-sm ${p === page ? 'border-slate-400 bg-slate-50 font-medium' : 'hover:bg-slate-50'}`}
+            >
+              {p}
+            </button>
+          ))}
+
+          <button
+            onClick={() => jumpTo(page + 1)}
+            disabled={page === totalPages}
+            className={`inline-flex items-center rounded-lg border px-2 py-1 text-sm ${page === totalPages ? 'opacity-50 cursor-not-allowed' : 'hover:bg-slate-50'}`}
+            title="Next page"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+          <button
+            onClick={() => jumpTo(totalPages)}
+            disabled={page === totalPages}
+            className={`inline-flex items-center rounded-lg border px-2 py-1 text-sm ${page === totalPages ? 'opacity-50 cursor-not-allowed' : 'hover:bg-slate-50'}`}
+            title="Last page"
+          >
+            <ChevronsRight className="h-4 w-4" />
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto max-w-6xl p-4 md:p-6 space-y-6 text-slate-900">
@@ -174,12 +268,15 @@ export default function TimeDifference() {
                 Sort by Country {sortKey === 'country' ? (sortAsc ? '(A–Z)' : '(Z–A)') : ''}
               </button>
               <span className="text-xs text-slate-500 ml-auto">
-                Showing {filtered.length.toLocaleString()} matches
+                {filtered.length.toLocaleString()} matches · {PAGE_SIZE} per page
               </span>
             </div>
           </div>
         </div>
       </motion.div>
+
+      {/* ==== NEW: Top pager (visible when more than one page) ==== */}
+      {totalPages > 1 && <Pager />}
 
       {/* Cards grid */}
       <motion.div
@@ -189,7 +286,7 @@ export default function TimeDifference() {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
       >
         <AnimatePresence initial={false}>
-          {filtered.map((r, i) => {
+          {paged.map((r, i) => {
             const diff = r.diffHours;
             const tz = r.timeZone;
 
@@ -267,6 +364,9 @@ export default function TimeDifference() {
           })}
         </AnimatePresence>
       </motion.div>
+
+      {/* ==== NEW: Bottom pager ==== */}
+      {totalPages > 1 && <Pager />}
 
       <motion.p
         className="text-xs text-slate-500"

@@ -240,80 +240,64 @@ export default function Personalize() {
             </div>
 
             {/* Country */}
-            <div>
-              <div className="flex items-center justify-between mb-2">
-                <div className="text-xs uppercase tracking-wide text-slate-500">
-                  Country
-                </div>
-                <div className="text-[10px] text-slate-400">
-                  Maps to IANA zone automatically
-                </div>
+            <div className="flex flex-col gap-2" ref={suggestRef}>
+              <div className="relative flex-1">
+                <Globe className="absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
+                <input
+                  placeholder="Filter countries..."
+                  className="w-full rounded-xl border pl-9 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                  value={filter}
+                  onChange={(e) => {
+                    setFilter(e.target.value);
+                    setOpenSuggest(true);
+                  }}
+                  onFocus={() => setOpenSuggest(Boolean(filter.trim()))}
+                />
+                <Search className="absolute right-3 top-2.5 h-4 w-4 text-slate-400" />
+
+                {/* Suggestions dropdown */}
+                <AnimatePresence>
+                  {openSuggest && filter.trim() && (
+                    <motion.ul
+                      initial={{ opacity: 0, y: -4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -4 }}
+                      className="absolute z-20 mt-1 max-h-64 w-full overflow-auto rounded-xl border bg-white shadow-lg"
+                    >
+                      {filteredCountries.slice(0, 14).map((c) => (
+                        <li
+                          key={c.country}
+                          className="px-3 py-2 text-sm hover:bg-slate-100 cursor-pointer"
+                          onMouseDown={() => {
+                            setCountry(c.country);
+                            setFilter("");
+                            setOpenSuggest(false);
+                          }}
+                        >
+                          {c.country}
+                        </li>
+                      ))}
+                      {filteredCountries.length === 0 && (
+                        <li className="px-3 py-2 text-sm text-slate-500">
+                          No matches
+                        </li>
+                      )}
+                    </motion.ul>
+                  )}
+                </AnimatePresence>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-2" ref={suggestRef}>
-                <div className="relative flex-1">
-                  <Globe className="absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
-                  <input
-                    placeholder="Filter countries..."
-                    className="w-full rounded-xl border pl-9 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
-                    value={filter}
-                    onChange={(e) => {
-                      setFilter(e.target.value);
-                      setOpenSuggest(true);
-                    }}
-                    onFocus={() => setOpenSuggest(Boolean(filter.trim()))}
-                  />
-                  <Search className="absolute right-3 top-2.5 h-4 w-4 text-slate-400" />
-
-                  {/* Suggestions dropdown */}
-                  <AnimatePresence>
-                    {openSuggest && filter.trim() && (
-                      <motion.ul
-                        initial={{ opacity: 0, y: -4 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -4 }}
-                        className="absolute z-20 mt-1 max-h-64 w-full overflow-auto rounded-xl border bg-white shadow-lg"
-                      >
-                        {filteredCountries.slice(0, 14).map((c) => (
-                          <li
-                            key={c.country}
-                            className="px-3 py-2 text-sm hover:bg-slate-100 cursor-pointer"
-                            onMouseDown={() => {
-                              setCountry(c.country); // commit selection
-                              setFilter("");
-                              setOpenSuggest(false);
-                            }}
-                          >
-                            {c.country}
-                          </li>
-                        ))}
-                        {filteredCountries.length === 0 && (
-                          <li className="px-3 py-2 text-sm text-slate-500">
-                            No matches
-                          </li>
-                        )}
-                      </motion.ul>
-                    )}
-                  </AnimatePresence>
-                </div>
-
-                <select
-                  className="w-full sm:w-auto sm:min-w-[12rem] rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
-                  value={country}
-                  onChange={(e) => setCountry(e.target.value)}
-                >
-                  {COUNTRIES.map((c) => (
-                    <option key={c.country} value={c.country}>
-                      {c.country}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="text-xs text-slate-500 mt-2">
-                Selected time zone:{" "}
-                <span className="font-mono">{timeZone}</span>
-              </div>
+              <select
+                className="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                value={country}
+                onChange={(e) => setCountry(e.target.value)}
+              >
+                {COUNTRIES.map((c) => (
+                  <option key={c.country} value={c.country}>
+                    {c.country}
+                  </option>
+                ))}
+              </select>
             </div>
 
             <button

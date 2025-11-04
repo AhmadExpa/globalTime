@@ -12,6 +12,7 @@ const timersRoutes = require('./routes/timers');
 const newsletterRoutes = require('./routes/newsletter');
 const adminRoutes = require('./routes/admin');
 const contactRoutes = require('./routes/contact');
+const dstRouter = require('./routes/dst');
 
 const app = express();
 
@@ -34,6 +35,8 @@ app.use('/api/timers', timersRoutes);
 app.use('/api/newsletter', newsletterRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/contact', contactRoutes);
+app.use('/api/dst', dstRouter);
+
 
 const PORT = process.env.PORT || 4000;
 connectDB(process.env.MONGO_URI)

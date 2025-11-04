@@ -1,1172 +1,2084 @@
 [
   {
-    "country": "Afghanistan",
-    "timeZone": "Asia/Kabul",
-    "lat": 34.5553,
-    "lon": 69.2075
-  },
-  {
-    "country": "Albania",
-    "timeZone": "Europe/Tirane",
-    "lat": 41.3275,
-    "lon": 19.8187
-  },
-  {
-    "country": "Algeria",
-    "timeZone": "Africa/Algiers",
-    "lat": 36.7538,
-    "lon": 3.0588
-  },
-  {
-    "country": "Andorra",
-    "timeZone": "Europe/Andorra",
-    "lat": 42.5078,
-    "lon": 1.5211
-  },
-  {
-    "country": "Angola",
-    "timeZone": "Africa/Luanda",
-    "lat": -8.839,
-    "lon": 13.2894
-  },
-  {
-    "country": "Antigua and Barbuda",
-    "timeZone": "America/Antigua",
-    "lat": 17.1274,
-    "lon": -61.8468
-  },
-  {
-    "country": "Argentina",
-    "timeZone": "America/Argentina/Buenos_Aires",
-    "lat": -34.6037,
-    "lon": -58.3816
-  },
-  {
-    "country": "Armenia",
-    "timeZone": "Asia/Yerevan",
-    "lat": 40.1792,
-    "lon": 44.4991
-  },
-  {
-    "country": "Australia",
-    "timeZone": "Australia/Sydney",
-    "lat": -33.8688,
-    "lon": 151.2093
-  },
-  {
-    "country": "Austria",
-    "timeZone": "Europe/Vienna",
-    "lat": 48.2082,
-    "lon": 16.3738
-  },
-  {
-    "country": "Azerbaijan",
-    "timeZone": "Asia/Baku",
-    "lat": 40.4093,
-    "lon": 49.8671
-  },
-  {
-    "country": "Bahamas",
-    "timeZone": "America/Nassau",
-    "lat": 25.0478,
-    "lon": -77.3554
-  },
-  {
-    "country": "Bahrain",
-    "timeZone": "Asia/Bahrain",
-    "lat": 26.2285,
-    "lon": 50.586
-  },
-  {
-    "country": "Bangladesh",
-    "timeZone": "Asia/Dhaka",
-    "lat": 23.8103,
-    "lon": 90.4125
-  },
-  {
-    "country": "Barbados",
-    "timeZone": "America/Barbados",
-    "lat": 13.0975,
-    "lon": -59.6167
-  },
-  {
-    "country": "Belarus",
-    "timeZone": "Europe/Minsk",
-    "lat": 53.9006,
-    "lon": 27.559
-  },
-  {
-    "country": "Belgium",
-    "timeZone": "Europe/Brussels",
-    "lat": 50.8503,
-    "lon": 4.3517
-  },
-  {
-    "country": "Belize",
-    "timeZone": "America/Belize",
-    "lat": 17.5046,
-    "lon": -88.1962
-  },
-  {
-    "country": "Benin",
-    "timeZone": "Africa/Porto-Novo",
-    "lat": 6.4969,
-    "lon": 2.6289
-  },
-  {
-    "country": "Bhutan",
-    "timeZone": "Asia/Thimphu",
-    "lat": 27.4728,
-    "lon": 89.639
-  },
-  {
-    "country": "Bolivia",
-    "timeZone": "America/La_Paz",
-    "lat": -16.4897,
-    "lon": -68.1193
-  },
-  {
-    "country": "Bosnia and Herzegovina",
-    "timeZone": "Europe/Sarajevo",
-    "lat": 43.8563,
-    "lon": 18.4131
-  },
-  {
-    "country": "Botswana",
-    "timeZone": "Africa/Gaborone",
-    "lat": -24.6282,
-    "lon": 25.9231
-  },
-  {
-    "country": "Brazil",
-    "timeZone": "America/Sao_Paulo",
-    "lat": -23.5505,
-    "lon": -46.6333
-  },
-  {
-    "country": "Brunei",
-    "timeZone": "Asia/Brunei",
-    "lat": 4.9031,
-    "lon": 114.9398
-  },
-  {
-    "country": "Bulgaria",
-    "timeZone": "Europe/Sofia",
-    "lat": 42.6977,
-    "lon": 23.3219
-  },
-  {
-    "country": "Burkina Faso",
-    "timeZone": "Africa/Ouagadougou",
-    "lat": 12.3714,
-    "lon": -1.5197
-  },
-  {
-    "country": "Burundi",
-    "timeZone": "Africa/Bujumbura",
-    "lat": -3.3614,
-    "lon": 29.3599
-  },
-  {
-    "country": "Cabo Verde",
-    "timeZone": "Atlantic/Cape_Verde",
-    "lat": 14.9331,
-    "lon": -23.5133
-  },
-  {
-    "country": "Cambodia",
-    "timeZone": "Asia/Phnom_Penh",
-    "lat": 11.5564,
-    "lon": 104.9282
-  },
-  {
-    "country": "Cameroon",
-    "timeZone": "Africa/Douala",
-    "lat": 4.0511,
-    "lon": 9.7679
-  },
-  {
-    "country": "Canada",
-    "timeZone": "America/Toronto",
-    "lat": 43.6532,
-    "lon": -79.3832
-  },
-  {
-    "country": "Central African Republic",
-    "timeZone": "Africa/Bangui",
-    "lat": 4.3947,
-    "lon": 18.5582
-  },
-  {
-    "country": "Chad",
-    "timeZone": "Africa/Ndjamena",
-    "lat": 12.1348,
-    "lon": 15.0557
-  },
-  {
-    "country": "Chile",
-    "timeZone": "America/Santiago",
-    "lat": -33.4489,
-    "lon": -70.6693
-  },
-  {
-    "country": "China",
-    "timeZone": "Asia/Shanghai",
-    "lat": 39.9042,
-    "lon": 116.4074
-  },
-  {
-    "country": "Colombia",
-    "timeZone": "America/Bogota",
-    "lat": 4.711,
-    "lon": -74.0721
-  },
-  {
-    "country": "Comoros",
-    "timeZone": "Indian/Comoro",
-    "lat": -11.6455,
-    "lon": 43.3333
-  },
-  {
-    "country": "Congo (Congo-Brazzaville)",
-    "timeZone": "Africa/Brazzaville",
-    "lat": -4.2634,
-    "lon": 15.2429
-  },
-  {
-    "country": "Congo (DRC)",
-    "timeZone": "Africa/Kinshasa",
-    "lat": -4.4419,
-    "lon": 15.2663
-  },
-  {
-    "country": "Costa Rica",
-    "timeZone": "America/Costa_Rica",
-    "lat": 9.9281,
-    "lon": -84.0907
-  },
-  {
-    "country": "C\u00f4te d\u2019Ivoire",
+    "country": "Abidjan - Côte d'Ivoire",
     "timeZone": "Africa/Abidjan",
-    "lat": 5.3453,
-    "lon": -4.0244
+    "lat": 8.280000029,
+    "lon": -7.684001549
   },
   {
-    "country": "Croatia",
-    "timeZone": "Europe/Zagreb",
-    "lat": 45.815,
-    "lon": 15.9819
-  },
-  {
-    "country": "Cuba",
-    "timeZone": "America/Havana",
-    "lat": 23.1136,
-    "lon": -82.3666
-  },
-  {
-    "country": "Cyprus",
-    "timeZone": "Asia/Nicosia",
-    "lat": 35.1856,
-    "lon": 33.3823
-  },
-  {
-    "country": "Czechia",
-    "timeZone": "Europe/Prague",
-    "lat": 50.0755,
-    "lon": 14.4378
-  },
-  {
-    "country": "Denmark",
-    "timeZone": "Europe/Copenhagen",
-    "lat": 55.6761,
-    "lon": 12.5683
-  },
-  {
-    "country": "Djibouti",
-    "timeZone": "Africa/Djibouti",
-    "lat": 11.5721,
-    "lon": 43.1456
-  },
-  {
-    "country": "Dominica",
-    "timeZone": "America/Dominica",
-    "lat": 15.3092,
-    "lon": -61.379
-  },
-  {
-    "country": "Dominican Republic",
-    "timeZone": "America/Santo_Domingo",
-    "lat": 18.4861,
-    "lon": -69.9312
-  },
-  {
-    "country": "Ecuador",
-    "timeZone": "America/Guayaquil",
-    "lat": -2.17,
-    "lon": -79.9224
-  },
-  {
-    "country": "Egypt",
-    "timeZone": "Africa/Cairo",
-    "lat": 30.0444,
-    "lon": 31.2357
-  },
-  {
-    "country": "El Salvador",
-    "timeZone": "America/El_Salvador",
-    "lat": 13.6929,
-    "lon": -89.2182
-  },
-  {
-    "country": "Equatorial Guinea",
-    "timeZone": "Africa/Malabo",
-    "lat": 3.75,
-    "lon": 8.7833
-  },
-  {
-    "country": "Eritrea",
-    "timeZone": "Africa/Asmara",
-    "lat": 15.3229,
-    "lon": 38.9251
-  },
-  {
-    "country": "Estonia",
-    "timeZone": "Europe/Tallinn",
-    "lat": 59.437,
-    "lon": 24.7536
-  },
-  {
-    "country": "Eswatini",
-    "timeZone": "Africa/Mbabane",
-    "lat": -26.3054,
-    "lon": 31.1367
-  },
-  {
-    "country": "Ethiopia",
-    "timeZone": "Africa/Addis_Ababa",
-    "lat": 8.9806,
-    "lon": 38.7578
-  },
-  {
-    "country": "Fiji",
-    "timeZone": "Pacific/Fiji",
-    "lat": -18.1248,
-    "lon": 178.4501
-  },
-  {
-    "country": "Finland",
-    "timeZone": "Europe/Helsinki",
-    "lat": 60.1699,
-    "lon": 24.9384
-  },
-  {
-    "country": "France",
-    "timeZone": "Europe/Paris",
-    "lat": 48.8566,
-    "lon": 2.3522
-  },
-  {
-    "country": "Gabon",
-    "timeZone": "Africa/Libreville",
-    "lat": 0.4162,
-    "lon": 9.4673
-  },
-  {
-    "country": "Gambia",
-    "timeZone": "Africa/Banjul",
-    "lat": 13.4549,
-    "lon": -16.579
-  },
-  {
-    "country": "Georgia",
-    "timeZone": "Asia/Tbilisi",
-    "lat": 41.7151,
-    "lon": 44.8271
-  },
-  {
-    "country": "Germany",
-    "timeZone": "Europe/Berlin",
-    "lat": 52.52,
-    "lon": 13.405
-  },
-  {
-    "country": "Ghana",
+    "country": "Accra - Ghana",
     "timeZone": "Africa/Accra",
-    "lat": 5.6037,
-    "lon": -0.187
+    "lat": 7.335998991,
+    "lon": -2.336003416
   },
   {
-    "country": "Greece",
-    "timeZone": "Europe/Athens",
-    "lat": 37.9838,
-    "lon": 23.7275
+    "country": "Adak - United States of America ",
+    "timeZone": "America/Adak",
+    "lat": 52.19648968,
+    "lon": -174.2004887
   },
   {
-    "country": "Grenada",
-    "timeZone": "America/Grenada",
-    "lat": 12.0561,
-    "lon": -61.7488
+    "country": "Addis Ababa - Ethiopia",
+    "timeZone": "Africa/Addis_Ababa",
+    "lat": 7.059996077,
+    "lon": 38.47699862
   },
   {
-    "country": "Guatemala",
-    "timeZone": "America/Guatemala",
-    "lat": 14.6349,
-    "lon": -90.5069
+    "country": "Adelaide - Australia",
+    "timeZone": "Australia/Adelaide",
+    "lat": -34.28293455,
+    "lon": 140.6000378
   },
   {
-    "country": "Guinea",
-    "timeZone": "Africa/Conakry",
-    "lat": 9.6412,
-    "lon": -13.5784
-  },
-  {
-    "country": "Guinea-Bissau",
-    "timeZone": "Africa/Bissau",
-    "lat": 11.8613,
-    "lon": -15.5977
-  },
-  {
-    "country": "Guyana",
-    "timeZone": "America/Guyana",
-    "lat": 6.8013,
-    "lon": -58.1551
-  },
-  {
-    "country": "Haiti",
-    "timeZone": "America/Port-au-Prince",
-    "lat": 18.5944,
-    "lon": -72.3074
-  },
-  {
-    "country": "Honduras",
-    "timeZone": "America/Tegucigalpa",
-    "lat": 14.0723,
-    "lon": -87.1921
-  },
-  {
-    "country": "Hungary",
-    "timeZone": "Europe/Budapest",
-    "lat": 47.4979,
-    "lon": 19.0402
-  },
-  {
-    "country": "Iceland",
-    "timeZone": "Atlantic/Reykjavik",
-    "lat": 64.1466,
-    "lon": -21.9426
-  },
-  {
-    "country": "India",
-    "timeZone": "Asia/Kolkata",
-    "lat": 28.6139,
-    "lon": 77.209
-  },
-  {
-    "country": "Indonesia",
-    "timeZone": "Asia/Jakarta",
-    "lat": -6.2088,
-    "lon": 106.8456
-  },
-  {
-    "country": "Iran",
-    "timeZone": "Asia/Tehran",
-    "lat": 35.6892,
-    "lon": 51.389
-  },
-  {
-    "country": "Iraq",
-    "timeZone": "Asia/Baghdad",
-    "lat": 33.3152,
-    "lon": 44.3661
-  },
-  {
-    "country": "Ireland",
-    "timeZone": "Europe/Dublin",
-    "lat": 53.3498,
-    "lon": -6.2603
-  },
-  {
-    "country": "Israel",
-    "timeZone": "Asia/Jerusalem",
-    "lat": 31.7683,
-    "lon": 35.2137
-  },
-  {
-    "country": "Italy",
-    "timeZone": "Europe/Rome",
-    "lat": 41.9028,
-    "lon": 12.4964
-  },
-  {
-    "country": "Jamaica",
-    "timeZone": "America/Jamaica",
-    "lat": 18.0179,
-    "lon": -76.8099
-  },
-  {
-    "country": "Japan",
-    "timeZone": "Asia/Tokyo",
-    "lat": 35.6762,
-    "lon": 139.6503
-  },
-  {
-    "country": "Jordan",
-    "timeZone": "Asia/Amman",
-    "lat": 31.9539,
-    "lon": 35.9106
-  },
-  {
-    "country": "Kazakhstan",
-    "timeZone": "Asia/Almaty",
-    "lat": 43.222,
-    "lon": 76.8512
-  },
-  {
-    "country": "Kenya",
-    "timeZone": "Africa/Nairobi",
-    "lat": -1.2921,
-    "lon": 36.8219
-  },
-  {
-    "country": "Kiribati",
-    "timeZone": "Pacific/Tarawa",
-    "lat": 1.4518,
-    "lon": 173.0327
-  },
-  {
-    "country": "Kuwait",
-    "timeZone": "Asia/Kuwait",
-    "lat": 29.3759,
-    "lon": 47.9774
-  },
-  {
-    "country": "Kyrgyzstan",
-    "timeZone": "Asia/Bishkek",
-    "lat": 42.8746,
-    "lon": 74.5698
-  },
-  {
-    "country": "Laos",
-    "timeZone": "Asia/Vientiane",
-    "lat": 17.9757,
-    "lon": 102.6331
-  },
-  {
-    "country": "Latvia",
-    "timeZone": "Europe/Riga",
-    "lat": 56.9496,
-    "lon": 24.1052
-  },
-  {
-    "country": "Lebanon",
-    "timeZone": "Asia/Beirut",
-    "lat": 33.8938,
-    "lon": 35.5018
-  },
-  {
-    "country": "Lesotho",
-    "timeZone": "Africa/Maseru",
-    "lat": -29.3151,
-    "lon": 27.4869
-  },
-  {
-    "country": "Liberia",
-    "timeZone": "Africa/Monrovia",
-    "lat": 6.3156,
-    "lon": -10.8074
-  },
-  {
-    "country": "Libya",
-    "timeZone": "Africa/Tripoli",
-    "lat": 32.8872,
-    "lon": 13.1913
-  },
-  {
-    "country": "Liechtenstein",
-    "timeZone": "Europe/Vaduz",
-    "lat": 47.141,
-    "lon": 9.5209
-  },
-  {
-    "country": "Lithuania",
-    "timeZone": "Europe/Vilnius",
-    "lat": 54.6872,
-    "lon": 25.2797
-  },
-  {
-    "country": "Luxembourg",
-    "timeZone": "Europe/Luxembourg",
-    "lat": 49.6116,
-    "lon": 6.1319
-  },
-  {
-    "country": "Madagascar",
-    "timeZone": "Indian/Antananarivo",
-    "lat": -18.8792,
-    "lon": 47.5079
-  },
-  {
-    "country": "Malawi",
-    "timeZone": "Africa/Blantyre",
-    "lat": -15.7861,
-    "lon": 35.0058
-  },
-  {
-    "country": "Malaysia",
-    "timeZone": "Asia/Kuala_Lumpur",
-    "lat": 3.139,
-    "lon": 101.6869
-  },
-  {
-    "country": "Maldives",
-    "timeZone": "Indian/Maldives",
-    "lat": 4.1755,
-    "lon": 73.5093
-  },
-  {
-    "country": "Mali",
-    "timeZone": "Africa/Bamako",
-    "lat": 12.6392,
-    "lon": -8.0029
-  },
-  {
-    "country": "Malta",
-    "timeZone": "Europe/Malta",
-    "lat": 35.8997,
-    "lon": 14.5147
-  },
-  {
-    "country": "Marshall Islands",
-    "timeZone": "Pacific/Majuro",
-    "lat": 7.0897,
-    "lon": 171.3803
-  },
-  {
-    "country": "Mauritania",
-    "timeZone": "Africa/Nouakchott",
-    "lat": 18.0735,
-    "lon": -15.9582
-  },
-  {
-    "country": "Mauritius",
-    "timeZone": "Indian/Mauritius",
-    "lat": -20.1609,
-    "lon": 57.5012
-  },
-  {
-    "country": "Mexico",
-    "timeZone": "America/Mexico_City",
-    "lat": 19.4326,
-    "lon": -99.1332
-  },
-  {
-    "country": "Micronesia",
-    "timeZone": "Pacific/Chuuk",
-    "lat": 7.4189,
-    "lon": 151.78
-  },
-  {
-    "country": "Moldova",
-    "timeZone": "Europe/Chisinau",
-    "lat": 47.0105,
-    "lon": 28.8638
-  },
-  {
-    "country": "Monaco",
-    "timeZone": "Europe/Monaco",
-    "lat": 43.7384,
-    "lon": 7.4246
-  },
-  {
-    "country": "Mongolia",
-    "timeZone": "Asia/Ulaanbaatar",
-    "lat": 47.8864,
-    "lon": 106.9057
-  },
-  {
-    "country": "Montenegro",
-    "timeZone": "Europe/Podgorica",
-    "lat": 42.4304,
-    "lon": 19.2594
-  },
-  {
-    "country": "Morocco",
-    "timeZone": "Africa/Casablanca",
-    "lat": 33.5731,
-    "lon": -7.5898
-  },
-  {
-    "country": "Mozambique",
-    "timeZone": "Africa/Maputo",
-    "lat": -25.9692,
-    "lon": 32.5732
-  },
-  {
-    "country": "Myanmar",
-    "timeZone": "Asia/Yangon",
-    "lat": 16.8409,
-    "lon": 96.1735
-  },
-  {
-    "country": "Namibia",
-    "timeZone": "Africa/Windhoek",
-    "lat": -22.5609,
-    "lon": 17.0658
-  },
-  {
-    "country": "Nauru",
-    "timeZone": "Pacific/Nauru",
-    "lat": -0.5228,
-    "lon": 166.9315
-  },
-  {
-    "country": "Nepal",
-    "timeZone": "Asia/Kathmandu",
-    "lat": 27.7172,
-    "lon": 85.324
-  },
-  {
-    "country": "Netherlands",
-    "timeZone": "Europe/Amsterdam",
-    "lat": 52.3676,
-    "lon": 4.9041
-  },
-  {
-    "country": "New Zealand",
-    "timeZone": "Pacific/Auckland",
-    "lat": -36.8485,
-    "lon": 174.7633
-  },
-  {
-    "country": "Nicaragua",
-    "timeZone": "America/Managua",
-    "lat": 12.114,
-    "lon": -86.2362
-  },
-  {
-    "country": "Niger",
-    "timeZone": "Africa/Niamey",
-    "lat": 13.5116,
-    "lon": 2.1254
-  },
-  {
-    "country": "Nigeria",
-    "timeZone": "Africa/Lagos",
-    "lat": 6.5244,
-    "lon": 3.3792
-  },
-  {
-    "country": "North Korea",
-    "timeZone": "Asia/Pyongyang",
-    "lat": 39.0392,
-    "lon": 125.7625
-  },
-  {
-    "country": "North Macedonia",
-    "timeZone": "Europe/Skopje",
-    "lat": 41.9981,
-    "lon": 21.4254
-  },
-  {
-    "country": "Norway",
-    "timeZone": "Europe/Oslo",
-    "lat": 59.9139,
-    "lon": 10.7522
-  },
-  {
-    "country": "Oman",
-    "timeZone": "Asia/Muscat",
-    "lat": 23.5859,
-    "lon": 58.4059
-  },
-  {
-    "country": "Pakistan",
-    "timeZone": "Asia/Karachi",
-    "lat": 24.8607,
-    "lon": 67.0011
-  },
-  {
-    "country": "Palau",
-    "timeZone": "Pacific/Palau",
-    "lat": 7.5,
-    "lon": 134.6241
-  },
-  {
-    "country": "Panama",
-    "timeZone": "America/Panama",
-    "lat": 8.9824,
-    "lon": -79.5199
-  },
-  {
-    "country": "Papua New Guinea",
-    "timeZone": "Pacific/Port_Moresby",
-    "lat": -9.4438,
-    "lon": 147.1803
-  },
-  {
-    "country": "Paraguay",
-    "timeZone": "America/Asuncion",
-    "lat": -25.2637,
-    "lon": -57.5759
-  },
-  {
-    "country": "Peru",
-    "timeZone": "America/Lima",
-    "lat": -12.0464,
-    "lon": -77.0428
-  },
-  {
-    "country": "Philippines",
-    "timeZone": "Asia/Manila",
-    "lat": 14.5995,
-    "lon": 120.9842
-  },
-  {
-    "country": "Poland",
-    "timeZone": "Europe/Warsaw",
-    "lat": 52.2297,
-    "lon": 21.0122
-  },
-  {
-    "country": "Portugal",
-    "timeZone": "Europe/Lisbon",
-    "lat": 38.7223,
-    "lon": -9.1393
-  },
-  {
-    "country": "Qatar",
-    "timeZone": "Asia/Qatar",
-    "lat": 25.2854,
-    "lon": 51.531
-  },
-  {
-    "country": "Romania",
-    "timeZone": "Europe/Bucharest",
-    "lat": 44.4268,
-    "lon": 26.1025
-  },
-  {
-    "country": "Russia",
-    "timeZone": "Europe/Moscow",
-    "lat": 55.7558,
-    "lon": 37.6173
-  },
-  {
-    "country": "Rwanda",
-    "timeZone": "Africa/Kigali",
-    "lat": -1.9579,
-    "lon": 30.1127
-  },
-  {
-    "country": "Saint Kitts and Nevis",
-    "timeZone": "America/St_Kitts",
-    "lat": 17.3026,
-    "lon": -62.7177
-  },
-  {
-    "country": "Saint Lucia",
-    "timeZone": "America/St_Lucia",
-    "lat": 13.9094,
-    "lon": -60.9789
-  },
-  {
-    "country": "Saint Vincent and the Grenadines",
-    "timeZone": "America/St_Vincent",
-    "lat": 13.155,
-    "lon": -61.227
-  },
-  {
-    "country": "Samoa",
-    "timeZone": "Pacific/Apia",
-    "lat": -13.8507,
-    "lon": -171.7514
-  },
-  {
-    "country": "San Marino",
-    "timeZone": "Europe/San_Marino",
-    "lat": 43.9424,
-    "lon": 12.4578
-  },
-  {
-    "country": "Sao Tome and Principe",
-    "timeZone": "Africa/Sao_Tome",
-    "lat": 0.3365,
-    "lon": 6.7273
-  },
-  {
-    "country": "Saudi Arabia",
-    "timeZone": "Asia/Riyadh",
-    "lat": 24.7136,
-    "lon": 46.6753
-  },
-  {
-    "country": "Senegal",
-    "timeZone": "Africa/Dakar",
-    "lat": 14.7167,
-    "lon": -17.4677
-  },
-  {
-    "country": "Serbia",
-    "timeZone": "Europe/Belgrade",
-    "lat": 44.7866,
-    "lon": 20.4489
-  },
-  {
-    "country": "Seychelles",
-    "timeZone": "Indian/Mahe",
-    "lat": -4.6796,
-    "lon": 55.492
-  },
-  {
-    "country": "Sierra Leone",
-    "timeZone": "Africa/Freetown",
-    "lat": 8.4657,
-    "lon": -13.2317
-  },
-  {
-    "country": "Singapore",
-    "timeZone": "Asia/Singapore",
-    "lat": 1.3521,
-    "lon": 103.8198
-  },
-  {
-    "country": "Slovakia",
-    "timeZone": "Europe/Bratislava",
-    "lat": 48.1486,
-    "lon": 17.1077
-  },
-  {
-    "country": "Slovenia",
-    "timeZone": "Europe/Ljubljana",
-    "lat": 46.0569,
-    "lon": 14.5058
-  },
-  {
-    "country": "Solomon Islands",
-    "timeZone": "Pacific/Guadalcanal",
-    "lat": -9.4456,
-    "lon": 159.9729
-  },
-  {
-    "country": "Somalia",
-    "timeZone": "Africa/Mogadishu",
-    "lat": 2.0469,
-    "lon": 45.3182
-  },
-  {
-    "country": "South Africa",
-    "timeZone": "Africa/Johannesburg",
-    "lat": -26.2041,
-    "lon": 28.0473
-  },
-  {
-    "country": "South Korea",
-    "timeZone": "Asia/Seoul",
-    "lat": 37.5665,
-    "lon": 126.978
-  },
-  {
-    "country": "South Sudan",
-    "timeZone": "Africa/Juba",
-    "lat": 4.8594,
-    "lon": 31.5713
-  },
-  {
-    "country": "Spain",
-    "timeZone": "Europe/Madrid",
-    "lat": 40.4168,
-    "lon": -3.7038
-  },
-  {
-    "country": "Sri Lanka",
-    "timeZone": "Asia/Colombo",
-    "lat": 6.9271,
-    "lon": 79.8612
-  },
-  {
-    "country": "Sudan",
-    "timeZone": "Africa/Khartoum",
-    "lat": 15.5007,
-    "lon": 32.5599
-  },
-  {
-    "country": "Suriname",
-    "timeZone": "America/Paramaribo",
-    "lat": 5.852,
-    "lon": -55.2038
-  },
-  {
-    "country": "Sweden",
-    "timeZone": "Europe/Stockholm",
-    "lat": 59.3293,
-    "lon": 18.0686
-  },
-  {
-    "country": "Switzerland",
-    "timeZone": "Europe/Zurich",
-    "lat": 47.3769,
-    "lon": 8.5417
-  },
-  {
-    "country": "Syria",
-    "timeZone": "Asia/Damascus",
-    "lat": 33.5138,
-    "lon": 36.2765
-  },
-  {
-    "country": "Taiwan",
-    "timeZone": "Asia/Taipei",
-    "lat": 25.033,
-    "lon": 121.5654
-  },
-  {
-    "country": "Tajikistan",
-    "timeZone": "Asia/Dushanbe",
-    "lat": 38.5598,
-    "lon": 68.787
-  },
-  {
-    "country": "Tanzania",
-    "timeZone": "Africa/Dar_es_Salaam",
-    "lat": -6.7924,
-    "lon": 39.2083
-  },
-  {
-    "country": "Thailand",
-    "timeZone": "Asia/Bangkok",
-    "lat": 13.7563,
-    "lon": 100.5018
-  },
-  {
-    "country": "Timor-Leste",
-    "timeZone": "Asia/Dili",
-    "lat": -8.5569,
-    "lon": 125.5603
-  },
-  {
-    "country": "Togo",
-    "timeZone": "Africa/Lome",
-    "lat": 6.1725,
-    "lon": 1.2314
-  },
-  {
-    "country": "Tonga",
-    "timeZone": "Pacific/Tongatapu",
-    "lat": -21.1394,
-    "lon": -175.2018
-  },
-  {
-    "country": "Trinidad and Tobago",
-    "timeZone": "America/Port_of_Spain",
-    "lat": 10.66,
-    "lon": -61.508
-  },
-  {
-    "country": "Tunisia",
-    "timeZone": "Africa/Tunis",
-    "lat": 36.8065,
-    "lon": 10.1815
-  },
-  {
-    "country": "Turkey",
-    "timeZone": "Europe/Istanbul",
-    "lat": 41.0082,
-    "lon": 28.9784
-  },
-  {
-    "country": "Turkmenistan",
-    "timeZone": "Asia/Ashgabat",
-    "lat": 37.9601,
-    "lon": 58.3261
-  },
-  {
-    "country": "Tuvalu",
-    "timeZone": "Pacific/Funafuti",
-    "lat": -8.5211,
-    "lon": 179.198
-  },
-  {
-    "country": "Uganda",
-    "timeZone": "Africa/Kampala",
-    "lat": 0.3476,
-    "lon": 32.5825
-  },
-  {
-    "country": "Ukraine",
-    "timeZone": "Europe/Kyiv",
-    "lat": 50.4501,
-    "lon": 30.5234
-  },
-  {
-    "country": "United Arab Emirates",
-    "timeZone": "Asia/Dubai",
-    "lat": 25.2048,
-    "lon": 55.2708
-  },
-  {
-    "country": "United Kingdom",
-    "timeZone": "Europe/London",
-    "lat": 51.5074,
-    "lon": -0.1278
-  },
-  {
-    "country": "United States",
-    "timeZone": "America/New_York",
-    "lat": 40.7128,
-    "lon": -74.006
-  },
-  {
-    "country": "Uruguay",
-    "timeZone": "America/Montevideo",
-    "lat": -34.9011,
-    "lon": -56.1645
-  },
-  {
-    "country": "Uzbekistan",
-    "timeZone": "Asia/Tashkent",
-    "lat": 41.2995,
-    "lon": 69.2401
-  },
-  {
-    "country": "Vanuatu",
-    "timeZone": "Pacific/Efate",
-    "lat": -17.7333,
-    "lon": 168.3273
-  },
-  {
-    "country": "Vatican City",
-    "timeZone": "Europe/Vatican",
-    "lat": 41.9029,
-    "lon": 12.4534
-  },
-  {
-    "country": "Venezuela",
-    "timeZone": "America/Caracas",
-    "lat": 10.4806,
-    "lon": -66.9036
-  },
-  {
-    "country": "Vietnam",
-    "timeZone": "Asia/Ho_Chi_Minh",
-    "lat": 10.8231,
-    "lon": 106.6297
-  },
-  {
-    "country": "Yemen",
+    "country": "Aden - Yemen",
     "timeZone": "Asia/Aden",
-    "lat": 15.3694,
-    "lon": 44.191
+    "lat": 13.9789981,
+    "lon": 45.57400265
   },
   {
-    "country": "Zambia",
-    "timeZone": "Africa/Lusaka",
-    "lat": -15.3875,
-    "lon": 28.3228
+    "country": "Algiers - Algeria",
+    "timeZone": "Africa/Algiers",
+    "lat": 36.82199703,
+    "lon": 5.76600356
   },
   {
-    "country": "Zimbabwe",
+    "country": "Almaty - Kazakhstan",
+    "timeZone": "Asia/Almaty",
+    "lat": 52.49967531,
+    "lon": 73.0997135
+  },
+  {
+    "country": "Amman - Jordan",
+    "timeZone": "Asia/Amman",
+    "lat": 32.28329707,
+    "lon": 36.23329852
+  },
+  {
+    "country": "Amsterdam - Netherlands (Kingdom of the)",
+    "timeZone": "Europe/Amsterdam",
+    "lat": 53.00000109,
+    "lon": 6.550002585
+  },
+  {
+    "country": "Anadyr - Russian Federation ",
+    "timeZone": "Asia/Anadyr",
+    "lat": 66.95000775,
+    "lon": -171.8166032
+  },
+  {
+    "country": "Anchorage - United States of America ",
+    "timeZone": "America/Anchorage",
+    "lat": 55.33970868,
+    "lon": -160.4971908
+  },
+  {
+    "country": "Andorra - Andorra",
+    "timeZone": "Europe/Andorra",
+    "lat": 42.50000144,
+    "lon": 1.516485961
+  },
+  {
+    "country": "Antananarivo - Madagascar",
+    "timeZone": "Indian/Antananarivo",
+    "lat": -14.26617186,
+    "lon": 50.16659135
+  },
+  {
+    "country": "Antigua - Antigua and Barbuda",
+    "timeZone": "America/Antigua",
+    "lat": 17.11803652,
+    "lon": -61.85003382
+  },
+  {
+    "country": "Apia - Samoa",
+    "timeZone": "Pacific/Apia",
+    "lat": -13.84154504,
+    "lon": -171.7386416
+  },
+  {
+    "country": "Aqtau - Kazakhstan",
+    "timeZone": "Asia/Aqtau",
+    "lat": 43.69045506,
+    "lon": 51.14173561
+  },
+  {
+    "country": "Aqtobe - Kazakhstan",
+    "timeZone": "Asia/Aqtobe",
+    "lat": 49.47306419,
+    "lon": 57.44490678
+  },
+  {
+    "country": "Araguaina - Brazil",
+    "timeZone": "America/Araguaina",
+    "lat": -6.319576804,
+    "lon": -47.41998438
+  },
+  {
+    "country": "Aruba - Aruba",
+    "timeZone": "America/Aruba",
+    "lat": 12.53038373,
+    "lon": -70.02899195
+  },
+  {
+    "country": "Ashgabat - Turkmenistan",
+    "timeZone": "Asia/Ashgabat",
+    "lat": 38.97553957,
+    "lon": 56.27779455
+  },
+  {
+    "country": "Asmara - Eritrea",
+    "timeZone": "Africa/Asmara",
+    "lat": 15.11038129,
+    "lon": 36.65749345
+  },
+  {
+    "country": "Astrakhan - Russian Federation ",
+    "timeZone": "Europe/Astrakhan",
+    "lat": 48.27871848,
+    "lon": 46.16869584
+  },
+  {
+    "country": "Asuncion - Argentina",
+    "timeZone": "America/Asuncion",
+    "lat": -22.47998574,
+    "lon": -62.29998051
+  },
+  {
+    "country": "Athens - Greece",
+    "timeZone": "Europe/Athens",
+    "lat": 38.89899915,
+    "lon": 22.43400358
+  },
+  {
+    "country": "Atikokan - Canada",
+    "timeZone": "America/Atikokan",
+    "lat": 48.75039512,
+    "lon": -91.61658899
+  },
+  {
+    "country": "Atyrau - Kazakhstan",
+    "timeZone": "Asia/Atyrau",
+    "lat": 47.64824017,
+    "lon": 53.32650183
+  },
+  {
+    "country": "Auckland - New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "lat": -42.47274975,
+    "lon": 171.2087246
+  },
+  {
+    "country": "Azores - Portugal",
+    "timeZone": "Atlantic/Azores",
+    "lat": 38.53465595,
+    "lon": -28.64475681
+  },
+  {
+    "country": "Baghdad - Iraq",
+    "timeZone": "Asia/Baghdad",
+    "lat": 36.86670013,
+    "lon": 43.00000263
+  },
+  {
+    "country": "Bahia - Brazil",
+    "timeZone": "America/Bahia",
+    "lat": -16.28000242,
+    "lon": -39.0299797
+  },
+  {
+    "country": "Bahrain - Bahrain",
+    "timeZone": "Asia/Bahrain",
+    "lat": 26.23613629,
+    "lon": 50.58305172
+  },
+  {
+    "country": "Baku - Azerbaijan",
+    "timeZone": "Asia/Baku",
+    "lat": 40.5655556,
+    "lon": 45.8161111
+  },
+  {
+    "country": "Bamako - Mali",
+    "timeZone": "Africa/Bamako",
+    "lat": 16.41699404,
+    "lon": -3.666582684
+  },
+  {
+    "country": "Bangkok - Thailand",
+    "timeZone": "Asia/Bangkok",
+    "lat": 19.30100405,
+    "lon": 97.96899665
+  },
+  {
+    "country": "Bangui - Central African Republic ",
+    "timeZone": "Africa/Bangui",
+    "lat": 4.320000059,
+    "lon": 21.17999753
+  },
+  {
+    "country": "Banjul - Gambia ",
+    "timeZone": "Africa/Banjul",
+    "lat": 13.55100308,
+    "lon": -14.76700152
+  },
+  {
+    "country": "Barbados - Barbados",
+    "timeZone": "America/Barbados",
+    "lat": 13.10200258,
+    "lon": -59.61652674
+  },
+  {
+    "country": "Barnaul - Russian Federation ",
+    "timeZone": "Asia/Barnaul",
+    "lat": 52.53406598,
+    "lon": 85.18000972
+  },
+  {
+    "country": "Beirut - Lebanon",
+    "timeZone": "Asia/Beirut",
+    "lat": 33.83330406,
+    "lon": 35.53329652
+  },
+  {
+    "country": "Belem - Brazil",
+    "timeZone": "America/Belem",
+    "lat": -1.190019105,
+    "lon": -47.17999903
+  },
+  {
+    "country": "Belgrade - Kosovo",
+    "timeZone": "Europe/Belgrade",
+    "lat": 42.22932029,
+    "lon": 20.75009232
+  },
+  {
+    "country": "Belize - Belize",
+    "timeZone": "America/Belize",
+    "lat": 17.15599807,
+    "lon": -89.06100252
+  },
+  {
+    "country": "Berlin - Austria",
+    "timeZone": "Europe/Berlin",
+    "lat": 48.56704714,
+    "lon": 13.46660925
+  },
+  {
+    "country": "Bermuda - Bermuda",
+    "timeZone": "Atlantic/Bermuda",
+    "lat": 32.29419029,
+    "lon": -64.78393742
+  },
+  {
+    "country": "Bishkek - Kyrgyzstan",
+    "timeZone": "Asia/Bishkek",
+    "lat": 42.82987795,
+    "lon": 75.28459306
+  },
+  {
+    "country": "Bissau - Guinea-Bissau",
+    "timeZone": "Africa/Bissau",
+    "lat": 12.26899803,
+    "lon": -16.16499854
+  },
+  {
+    "country": "Blanc-Sablon - Canada",
+    "timeZone": "America/Blanc-Sablon",
+    "lat": 51.2423102,
+    "lon": -58.64699935
+  },
+  {
+    "country": "Blantyre - Malawi",
+    "timeZone": "Africa/Blantyre",
+    "lat": -11.9,
+    "lon": 33.6
+  },
+  {
+    "country": "Boa Vista - Brazil",
+    "timeZone": "America/Boa_Vista",
+    "lat": 1.816231505,
+    "lon": -61.12767481
+  },
+  {
+    "country": "Bogota - Colombia",
+    "timeZone": "America/Bogota",
+    "lat": 5.346999095,
+    "lon": -72.4059986
+  },
+  {
+    "country": "Boise - United States of America ",
+    "timeZone": "America/Boise",
+    "lat": 42.53581321,
+    "lon": -113.7918763
+  },
+  {
+    "country": "Bougainville - Papua New Guinea",
+    "timeZone": "Pacific/Bougainville",
+    "lat": -6.228000033,
+    "lon": 155.5659907
+  },
+  {
+    "country": "Bratislava - Slovakia",
+    "timeZone": "Europe/Bratislava",
+    "lat": 48.73329022,
+    "lon": 19.14998328
+  },
+  {
+    "country": "Brazzaville - Congo ",
+    "timeZone": "Africa/Brazzaville",
+    "lat": -4.164002942,
+    "lon": 13.55400049
+  },
+  {
+    "country": "Brisbane - Australia",
+    "timeZone": "Australia/Brisbane",
+    "lat": -26.67998777,
+    "lon": 153.0500272
+  },
+  {
+    "country": "Broken Hill - Australia",
+    "timeZone": "Australia/Broken_Hill",
+    "lat": -31.94995034,
+    "lon": 141.4331136
+  },
+  {
+    "country": "Brunei - Brunei Darussalam",
+    "timeZone": "Asia/Brunei",
+    "lat": 4.883331115,
+    "lon": 114.9332841
+  },
+  {
+    "country": "Brussels - Belgium",
+    "timeZone": "Europe/Brussels",
+    "lat": 50.44599911,
+    "lon": 3.939003561
+  },
+  {
+    "country": "Bucharest - Romania",
+    "timeZone": "Europe/Bucharest",
+    "lat": 45.04500004,
+    "lon": 23.27400062
+  },
+  {
+    "country": "Budapest - Hungary",
+    "timeZone": "Europe/Budapest",
+    "lat": 47.09099714,
+    "lon": 17.91099957
+  },
+  {
+    "country": "Bujumbura - Burundi",
+    "timeZone": "Africa/Bujumbura",
+    "lat": -3.166703921,
+    "lon": 30.51669662
+  },
+  {
+    "country": "Cairo - Egypt",
+    "timeZone": "Africa/Cairo",
+    "lat": 30.59199913,
+    "lon": 30.89999749
+  },
+  {
+    "country": "Cambridge Bay - Canada",
+    "timeZone": "America/Cambridge_Bay",
+    "lat": 68.63329002,
+    "lon": -95.91666244
+  },
+  {
+    "country": "Campo Grande - Brazil",
+    "timeZone": "America/Campo_Grande",
+    "lat": -22.53000853,
+    "lon": -55.7299681
+  },
+  {
+    "country": "Canary - Spain",
+    "timeZone": "Atlantic/Canary",
+    "lat": 28.96904923,
+    "lon": -13.53783283
+  },
+  {
+    "country": "Cancun - Mexico",
+    "timeZone": "America/Cancun",
+    "lat": 21.20839057,
+    "lon": -86.7114549
+  },
+  {
+    "country": "Cape Verde - Cabo Verde",
+    "timeZone": "Atlantic/Cape_Verde",
+    "lat": 16.88376141,
+    "lon": -25.0000092
+  },
+  {
+    "country": "Caracas - Venezuela (Bolivarian Republic of)",
+    "timeZone": "America/Caracas",
+    "lat": 9.657999007,
+    "lon": -68.58999854
+  },
+  {
+    "country": "Casablanca - Morocco",
+    "timeZone": "Africa/Casablanca",
+    "lat": 35.02038047,
+    "lon": -5.909985801
+  },
+  {
+    "country": "Cayenne - French Guiana",
+    "timeZone": "America/Cayenne",
+    "lat": 4.729981302,
+    "lon": -52.33002059
+  },
+  {
+    "country": "Cayman - Cayman Islands ",
+    "timeZone": "America/Cayman",
+    "lat": 19.28043683,
+    "lon": -81.32998173
+  },
+  {
+    "country": "Ceuta - Spain",
+    "timeZone": "Africa/Ceuta",
+    "lat": 35.88898378,
+    "lon": -5.30699935
+  },
+  {
+    "country": "Chicago - United States of America ",
+    "timeZone": "America/Chicago",
+    "lat": 44.29048647,
+    "lon": -93.26801274
+  },
+  {
+    "country": "Chihuahua - Mexico",
+    "timeZone": "America/Chihuahua",
+    "lat": 26.93335472,
+    "lon": -105.6666358
+  },
+  {
+    "country": "Chisinau - Moldova (the Republic of)",
+    "timeZone": "Europe/Chisinau",
+    "lat": 47.2630556,
+    "lon": 29.1608333
+  },
+  {
+    "country": "Chita - Russian Federation ",
+    "timeZone": "Asia/Chita",
+    "lat": 51.87056643,
+    "lon": 116.0306331
+  },
+  {
+    "country": "Choibalsan - Mongolia",
+    "timeZone": "Asia/Choibalsan",
+    "lat": 46.69997764,
+    "lon": 113.2833073
+  },
+  {
+    "country": "Chongqing - China",
+    "timeZone": "Asia/Chongqing",
+    "lat": 35.60000917,
+    "lon": 103.2000468
+  },
+  {
+    "country": "Colombo - Sri Lanka",
+    "timeZone": "Asia/Colombo",
+    "lat": 8.568999036,
+    "lon": 81.23300155
+  },
+  {
+    "country": "Comoro - Comoros ",
+    "timeZone": "Indian/Comoro",
+    "lat": -11.7041577,
+    "lon": 43.2402441
+  },
+  {
+    "country": "Conakry - Guinea",
+    "timeZone": "Africa/Conakry",
+    "lat": 12.08400302,
+    "lon": -12.30100143
+  },
+  {
+    "country": "Copenhagen - Denmark",
+    "timeZone": "Europe/Copenhagen",
+    "lat": 55.70900103,
+    "lon": 9.534996498
+  },
+  {
+    "country": "Coral Harbour - Canada",
+    "timeZone": "America/Coral_Harbour",
+    "lat": 64.15377016,
+    "lon": -83.17658736
+  },
+  {
+    "country": "Costa Rica - Costa Rica",
+    "timeZone": "America/Costa_Rica",
+    "lat": 9.991997986,
+    "lon": -84.12000251
+  },
+  {
+    "country": "Creston - Canada",
+    "timeZone": "America/Creston",
+    "lat": 49.09996035,
+    "lon": -116.516697
+  },
+  {
+    "country": "Cuiaba - Brazil",
+    "timeZone": "America/Cuiaba",
+    "lat": -15.65001504,
+    "lon": -56.14002059
+  },
+  {
+    "country": "Curacao - Curaçao",
+    "timeZone": "America/Curacao",
+    "lat": 12.20042971,
+    "lon": -69.01998377
+  },
+  {
+    "country": "Dakar - Mauritania",
+    "timeZone": "Africa/Dakar",
+    "lat": 16.01998985,
+    "lon": -16.51001062
+  },
+  {
+    "country": "Damascus - Syrian Arab Republic ",
+    "timeZone": "Asia/Damascus",
+    "lat": 32.62500014,
+    "lon": 36.10500351
+  },
+  {
+    "country": "Danmarkshavn - Greenland",
+    "timeZone": "America/Danmarkshavn",
+    "lat": 70.48335797,
+    "lon": -21.9666543
+  },
+  {
+    "country": "Dar es Salaam - Tanzania, the United Republic of",
+    "timeZone": "Africa/Dar_es_Salaam",
+    "lat": -5.063463959,
+    "lon": 39.725799
+  },
+  {
+    "country": "Darwin - Australia",
+    "timeZone": "Australia/Darwin",
+    "lat": -13.81617348,
+    "lon": 131.816698
+  },
+  {
+    "country": "Dawson - Canada",
+    "timeZone": "America/Dawson",
+    "lat": 64.0666437,
+    "lon": -139.4166687
+  },
+  {
+    "country": "Dawson Creek - Canada",
+    "timeZone": "America/Dawson_Creek",
+    "lat": 55.76696942,
+    "lon": -120.233266
+  },
+  {
+    "country": "Denver - United States of America ",
+    "timeZone": "America/Denver",
+    "lat": 45.731768,
+    "lon": -107.612486
+  },
+  {
+    "country": "Detroit - Canada",
+    "timeZone": "America/Detroit",
+    "lat": 42.33329327,
+    "lon": -83.03334029
+  },
+  {
+    "country": "Dhaka - Bangladesh",
+    "timeZone": "Asia/Dhaka",
+    "lat": 24.24997845,
+    "lon": 89.92003048
+  },
+  {
+    "country": "Dili - Timor-Leste",
+    "timeZone": "Asia/Dili",
+    "lat": -8.559388409,
+    "lon": 125.5794559
+  },
+  {
+    "country": "Djibouti - Djibouti",
+    "timeZone": "Africa/Djibouti",
+    "lat": 11.10400201,
+    "lon": 42.37200058
+  },
+  {
+    "country": "Dominica - Dominica",
+    "timeZone": "America/Dominica",
+    "lat": 15.30101564,
+    "lon": -61.38701298
+  },
+  {
+    "country": "Douala - Cameroon",
+    "timeZone": "Africa/Douala",
+    "lat": 4.155003087,
+    "lon": 9.231003513
+  },
+  {
+    "country": "Dubai - United Arab Emirates ",
+    "timeZone": "Asia/Dubai",
+    "lat": 25.56527285,
+    "lon": 55.55334265
+  },
+  {
+    "country": "Dublin - Ireland",
+    "timeZone": "Europe/Dublin",
+    "lat": 53.6333333,
+    "lon": -8.1833333
+  },
+  {
+    "country": "Dushanbe - Tajikistan",
+    "timeZone": "Asia/Dushanbe",
+    "lat": 39.75000301,
+    "lon": 69.00000365
+  },
+  {
+    "country": "Edmonton - Canada",
+    "timeZone": "America/Edmonton",
+    "lat": 53.01669802,
+    "lon": -112.8166386
+  },
+  {
+    "country": "Efate - Vanuatu",
+    "timeZone": "Pacific/Efate",
+    "lat": -15.51255573,
+    "lon": 167.1766068
+  },
+  {
+    "country": "Eirunepe - Brazil",
+    "timeZone": "America/Eirunepe",
+    "lat": -6.66002114,
+    "lon": -69.87380762
+  },
+  {
+    "country": "El Aaiun - Morocco",
+    "timeZone": "Africa/El_Aaiun",
+    "lat": 27.46290895,
+    "lon": -12.99218917
+  },
+  {
+    "country": "El Salvador - El Salvador",
+    "timeZone": "America/El_Salvador",
+    "lat": 13.91900399,
+    "lon": -89.84500155
+  },
+  {
+    "country": "Famagusta - Northern Cyprus",
+    "timeZone": "Asia/Famagusta",
+    "lat": 35.3259991,
+    "lon": 33.33300361
+  },
+  {
+    "country": "Faroe - Faroe Islands ",
+    "timeZone": "Atlantic/Faroe",
+    "lat": 62.2374783,
+    "lon": -6.53901149
+  },
+  {
+    "country": "Fiji - Fiji",
+    "timeZone": "Pacific/Fiji",
+    "lat": -17.79959959,
+    "lon": 177.4166019
+  },
+  {
+    "country": "Fort Nelson - Canada",
+    "timeZone": "America/Fort_Nelson",
+    "lat": 58.81670575,
+    "lon": -122.5329706
+  },
+  {
+    "country": "Fortaleza - Brazil",
+    "timeZone": "America/Fortaleza",
+    "lat": -5.809995505,
+    "lon": -46.14998438
+  },
+  {
+    "country": "Freetown - Sierra Leone",
+    "timeZone": "Africa/Freetown",
+    "lat": 8.880425638,
+    "lon": -12.04997278
+  },
+  {
+    "country": "Funafuti - Tuvalu",
+    "timeZone": "Pacific/Funafuti",
+    "lat": -8.516651999,
+    "lon": 179.2166471
+  },
+  {
+    "country": "Gaborone - Botswana",
+    "timeZone": "Africa/Gaborone",
+    "lat": -24.377004,
+    "lon": 26.15200256
+  },
+  {
+    "country": "Galapagos - Ecuador",
+    "timeZone": "Pacific/Galapagos",
+    "lat": -0.933342266,
+    "lon": -91.01665145
+  },
+  {
+    "country": "Gaza - Palestine, State of",
+    "timeZone": "Asia/Gaza",
+    "lat": 31.52999921,
+    "lon": 34.44501868
+  },
+  {
+    "country": "Gibraltar - Gibraltar",
+    "timeZone": "Europe/Gibraltar",
+    "lat": 36.13243495,
+    "lon": -5.37807483
+  },
+  {
+    "country": "Glace Bay - Canada",
+    "timeZone": "America/Glace_Bay",
+    "lat": 46.06611452,
+    "lon": -60.17998071
+  },
+  {
+    "country": "Godthab - Greenland",
+    "timeZone": "America/Godthab",
+    "lat": 68.81927014,
+    "lon": -51.17851854
+  },
+  {
+    "country": "Goose Bay - Canada",
+    "timeZone": "America/Goose_Bay",
+    "lat": 55.44996035,
+    "lon": -60.21667098
+  },
+  {
+    "country": "Grand Turk - Turks and Caicos Islands ",
+    "timeZone": "America/Grand_Turk",
+    "lat": 21.46642743,
+    "lon": -71.13597864
+  },
+  {
+    "country": "Grenada - Grenada",
+    "timeZone": "America/Grenada",
+    "lat": 12.0526334,
+    "lon": -61.74164323
+  },
+  {
+    "country": "Guadalcanal - Solomon Islands",
+    "timeZone": "Pacific/Guadalcanal",
+    "lat": -8.09962319,
+    "lon": 156.8350158
+  },
+  {
+    "country": "Guadeloupe - Guadeloupe",
+    "timeZone": "America/Guadeloupe",
+    "lat": 16.24147504,
+    "lon": -61.5329989
+  },
+  {
+    "country": "Guam - Guam",
+    "timeZone": "Pacific/Guam",
+    "lat": 13.4700163,
+    "lon": 144.750017
+  },
+  {
+    "country": "Guatemala - Guatemala",
+    "timeZone": "America/Guatemala",
+    "lat": 15.10299903,
+    "lon": -90.31400061
+  },
+  {
+    "country": "Guayaquil - Ecuador",
+    "timeZone": "America/Guayaquil",
+    "lat": -1.483002014,
+    "lon": -77.98699756
+  },
+  {
+    "country": "Guyana - Guyana",
+    "timeZone": "America/Guyana",
+    "lat": 5.900039082,
+    "lon": -57.16998356
+  },
+  {
+    "country": "Halifax - Canada",
+    "timeZone": "America/Halifax",
+    "lat": 45.58327578,
+    "lon": -62.63331934
+  },
+  {
+    "country": "Harare - Zimbabwe",
     "timeZone": "Africa/Harare",
-    "lat": -17.8292,
-    "lon": 31.0522
+    "lat": -17.51961668,
+    "lon": 30.97003699
+  },
+  {
+    "country": "Harbin - China",
+    "timeZone": "Asia/Harbin",
+    "lat": 45.49999921,
+    "lon": 124.2999991
+  },
+  {
+    "country": "Havana - Cuba",
+    "timeZone": "America/Havana",
+    "lat": 21.83999636,
+    "lon": -78.76194727
+  },
+  {
+    "country": "Hebron - Palestine, State of",
+    "timeZone": "Asia/Hebron",
+    "lat": 31.90294475,
+    "lon": 35.20620938
+  },
+  {
+    "country": "Helsinki - Finland",
+    "timeZone": "Europe/Helsinki",
+    "lat": 60.99699611,
+    "lon": 24.47199954
+  },
+  {
+    "country": "Hermosillo - Mexico",
+    "timeZone": "America/Hermosillo",
+    "lat": 27.58000775,
+    "lon": -109.9299931
+  },
+  {
+    "country": "Ho Chi Minh City - Viet Nam",
+    "timeZone": "Asia/Ho_Chi_Minh",
+    "lat": 11.32299911,
+    "lon": 106.1469997
+  },
+  {
+    "country": "Hobart - Australia",
+    "timeZone": "Australia/Hobart",
+    "lat": -40.83292234,
+    "lon": 145.1166613
+  },
+  {
+    "country": "Hong Kong - Hong Kong",
+    "timeZone": "Asia/Hong_Kong",
+    "lat": 22.3049809,
+    "lon": 114.1850093
+  },
+  {
+    "country": "Honolulu - United States of America ",
+    "timeZone": "Pacific/Honolulu",
+    "lat": 21.98151227,
+    "lon": -159.3710063
+  },
+  {
+    "country": "Hovd - Mongolia",
+    "timeZone": "Asia/Hovd",
+    "lat": 48.93369143,
+    "lon": 89.95000281
+  },
+  {
+    "country": "Inuvik - Canada",
+    "timeZone": "America/Inuvik",
+    "lat": 68.34997398,
+    "lon": -133.6999893
+  },
+  {
+    "country": "Iqaluit - Canada",
+    "timeZone": "America/Iqaluit",
+    "lat": 68.76746684,
+    "lon": -81.23608303
+  },
+  {
+    "country": "Irkutsk - Russian Federation ",
+    "timeZone": "Asia/Irkutsk",
+    "lat": 52.83299713,
+    "lon": 104.6999977
+  },
+  {
+    "country": "Isle of Man - Isle of Man",
+    "timeZone": "Europe/Isle_of_Man",
+    "lat": 54.15042727,
+    "lon": -4.480021404
+  },
+  {
+    "country": "Istanbul - Türkiye",
+    "timeZone": "Europe/Istanbul",
+    "lat": 41.74299917,
+    "lon": 27.22599962
+  },
+  {
+    "country": "Jakarta - Indonesia",
+    "timeZone": "Asia/Jakarta",
+    "lat": 3.620359109,
+    "lon": 98.50007524
+  },
+  {
+    "country": "Jamaica - Jamaica",
+    "timeZone": "America/Jamaica",
+    "lat": 18.44299809,
+    "lon": -78.17900362
+  },
+  {
+    "country": "Jayapura - Indonesia",
+    "timeZone": "Asia/Jayapura",
+    "lat": 0.696377379,
+    "lon": 127.4359834
+  },
+  {
+    "country": "Jerusalem - Israel",
+    "timeZone": "Asia/Jerusalem",
+    "lat": 31.91670012,
+    "lon": 34.86670252
+  },
+  {
+    "country": "Johannesburg - South Africa",
+    "timeZone": "Africa/Johannesburg",
+    "lat": -30.71953449,
+    "lon": 25.10000769
+  },
+  {
+    "country": "Juba - South Sudan",
+    "timeZone": "Africa/Juba",
+    "lat": 9.2333333,
+    "lon": 29.8333333
+  },
+  {
+    "country": "Juneau - United States of America ",
+    "timeZone": "America/Juneau",
+    "lat": 58.11540489,
+    "lon": -135.438617
+  },
+  {
+    "country": "Kabul - Afghanistan",
+    "timeZone": "Asia/Kabul",
+    "lat": 34.98300013,
+    "lon": 63.13329964
+  },
+  {
+    "country": "Kaliningrad - Russian Federation ",
+    "timeZone": "Europe/Kaliningrad",
+    "lat": 54.6316382,
+    "lon": 21.81085445
+  },
+  {
+    "country": "Kamchatka - Russian Federation ",
+    "timeZone": "Asia/Kamchatka",
+    "lat": 60.5815851,
+    "lon": 169.0499808
+  },
+  {
+    "country": "Kampala - Uganda",
+    "timeZone": "Africa/Kampala",
+    "lat": -0.3088889,
+    "lon": 32.225
+  },
+  {
+    "country": "Karachi - Pakistan",
+    "timeZone": "Asia/Karachi",
+    "lat": 33.89918276,
+    "lon": 70.10082678
+  },
+  {
+    "country": "Kashgar - China",
+    "timeZone": "Asia/Kashgar",
+    "lat": 32.20039756,
+    "lon": 79.98332434
+  },
+  {
+    "country": "Kathmandu - Nepal",
+    "timeZone": "Asia/Kathmandu",
+    "lat": 28.35000004,
+    "lon": 82.18330255
+  },
+  {
+    "country": "Khandyga - Russian Federation ",
+    "timeZone": "Asia/Khandyga",
+    "lat": 60.80002138,
+    "lon": 135.1833142
+  },
+  {
+    "country": "Khartoum - Sudan ",
+    "timeZone": "Africa/Khartoum",
+    "lat": 11.77040428,
+    "lon": 34.34998572
+  },
+  {
+    "country": "Kigali - Rwanda",
+    "timeZone": "Africa/Kigali",
+    "lat": -2.483297945,
+    "lon": 29.5667016
+  },
+  {
+    "country": "Kinshasa - Congo (the Democratic Republic of the)",
+    "timeZone": "Africa/Kinshasa",
+    "lat": 4.330341613,
+    "lon": 18.61502885
+  },
+  {
+    "country": "Kirov - Russian Federation ",
+    "timeZone": "Europe/Kirov",
+    "lat": 58.55437034,
+    "lon": 50.04437659
+  },
+  {
+    "country": "Kolkata - India",
+    "timeZone": "Asia/Kolkata",
+    "lat": 15.491997,
+    "lon": 73.81800065
+  },
+  {
+    "country": "Krasnoyarsk - Russian Federation ",
+    "timeZone": "Asia/Krasnoyarsk",
+    "lat": 53.8313253,
+    "lon": 91.22268998
+  },
+  {
+    "country": "Kuala Lumpur - Malaysia",
+    "timeZone": "Asia/Kuala_Lumpur",
+    "lat": 6.433001991,
+    "lon": 100.1899987
+  },
+  {
+    "country": "Kuching - Malaysia",
+    "timeZone": "Asia/Kuching",
+    "lat": 5.046396097,
+    "lon": 118.3359704
+  },
+  {
+    "country": "Kuwait - Kuwait",
+    "timeZone": "Asia/Kuwait",
+    "lat": 29.33334002,
+    "lon": 47.99999756
+  },
+  {
+    "country": "Kyiv - Ukraine",
+    "timeZone": "Europe/Kyiv",
+    "lat": 46.96773907,
+    "lon": 31.984342
+  },
+  {
+    "country": "La Paz - Bolivia (Plurinational State of)",
+    "timeZone": "America/La_Paz",
+    "lat": -17.55000242,
+    "lon": -65.83997115
+  },
+  {
+    "country": "Lagos - Nigeria",
+    "timeZone": "Africa/Lagos",
+    "lat": 5.532003041,
+    "lon": 7.486002487
+  },
+  {
+    "country": "Libreville - Gabon",
+    "timeZone": "Africa/Libreville",
+    "lat": -2.856995957,
+    "lon": 11.02699849
+  },
+  {
+    "country": "Lima - Bolivia (Plurinational State of)",
+    "timeZone": "America/Lima",
+    "lat": -12.49961302,
+    "lon": -68.66656865
+  },
+  {
+    "country": "Lisbon - Portugal",
+    "timeZone": "Europe/Lisbon",
+    "lat": 40.64100311,
+    "lon": -8.650997534
+  },
+  {
+    "country": "Ljubljana - Slovenia",
+    "timeZone": "Europe/Ljubljana",
+    "lat": 46.54047833,
+    "lon": 15.65004187
+  },
+  {
+    "country": "Lome - Togo",
+    "timeZone": "Africa/Lome",
+    "lat": 9.261000068,
+    "lon": 0.789003574
+  },
+  {
+    "country": "London - United Kingdom of Great Britain and Northern Ireland ",
+    "timeZone": "Europe/London",
+    "lat": 55.93329002,
+    "lon": -4.750030763
+  },
+  {
+    "country": "Longyearbyen - Svalbard and Jan Mayen",
+    "timeZone": "Arctic/Longyearbyen",
+    "lat": 78.21668439,
+    "lon": 15.5499963
+  },
+  {
+    "country": "Los Angeles - United States of America ",
+    "timeZone": "America/Los_Angeles",
+    "lat": 47.47421979,
+    "lon": -115.9268881
+  },
+  {
+    "country": "Luanda - Angola",
+    "timeZone": "Africa/Luanda",
+    "lat": -18.01953449,
+    "lon": 21.42999914
+  },
+  {
+    "country": "Lubumbashi - Congo (the Democratic Republic of the)",
+    "timeZone": "Africa/Lubumbashi",
+    "lat": -0.756998889,
+    "lon": 28.52800254
+  },
+  {
+    "country": "Lusaka - Mozambique",
+    "timeZone": "Africa/Lusaka",
+    "lat": -15.61957762,
+    "lon": 30.41001949
+  },
+  {
+    "country": "Luxembourg - Luxembourg",
+    "timeZone": "Europe/Luxembourg",
+    "lat": 49.88330105,
+    "lon": 6.166701555
+  },
+  {
+    "country": "Macau - Macao",
+    "timeZone": "Asia/Macau",
+    "lat": 22.20299746,
+    "lon": 113.5450484
+  },
+  {
+    "country": "Maceio - Brazil",
+    "timeZone": "America/Maceio",
+    "lat": -9.48000405,
+    "lon": -35.83996769
+  },
+  {
+    "country": "Madeira - Portugal",
+    "timeZone": "Atlantic/Madeira",
+    "lat": 32.64998252,
+    "lon": -16.88003972
+  },
+  {
+    "country": "Madrid - Spain",
+    "timeZone": "Europe/Madrid",
+    "lat": 38.91200402,
+    "lon": -6.337997512
+  },
+  {
+    "country": "Magadan - Russian Federation ",
+    "timeZone": "Asia/Magadan",
+    "lat": 61.63327801,
+    "lon": 147.9166971
+  },
+  {
+    "country": "Mahe - Seychelles",
+    "timeZone": "Indian/Mahe",
+    "lat": -4.616631654,
+    "lon": 55.44998979
+  },
+  {
+    "country": "Majuro - Marshall Islands ",
+    "timeZone": "Pacific/Majuro",
+    "lat": 7.103004311,
+    "lon": 171.3800002
+  },
+  {
+    "country": "Makassar - Indonesia",
+    "timeZone": "Asia/Makassar",
+    "lat": -8.579542217,
+    "lon": 116.1350195
+  },
+  {
+    "country": "Malabo - Equatorial Guinea",
+    "timeZone": "Africa/Malabo",
+    "lat": 1.449999085,
+    "lon": 10.56670255
+  },
+  {
+    "country": "Maldives - Maldives",
+    "timeZone": "Indian/Maldives",
+    "lat": 4.16670819,
+    "lon": 73.49994747
+  },
+  {
+    "country": "Malta - Malta",
+    "timeZone": "Europe/Malta",
+    "lat": 35.89973248,
+    "lon": 14.51471065
+  },
+  {
+    "country": "Managua - Nicaragua",
+    "timeZone": "America/Managua",
+    "lat": 13.47599712,
+    "lon": -86.58299659
+  },
+  {
+    "country": "Manaus - Brazil",
+    "timeZone": "America/Manaus",
+    "lat": -3.289580873,
+    "lon": -60.6199797
+  },
+  {
+    "country": "Manila - Philippines ",
+    "timeZone": "Asia/Manila",
+    "lat": 10.55037539,
+    "lon": 123.3800036
+  },
+  {
+    "country": "Maputo - Mozambique",
+    "timeZone": "Africa/Maputo",
+    "lat": -16.09954832,
+    "lon": 33.95001013
+  },
+  {
+    "country": "Mariehamn - Åland Islands",
+    "timeZone": "Europe/Mariehamn",
+    "lat": 60.09699618,
+    "lon": 19.94900447
+  },
+  {
+    "country": "Martinique - Martinique",
+    "timeZone": "America/Martinique",
+    "lat": 14.6104118,
+    "lon": -61.08002914
+  },
+  {
+    "country": "Maseru - Lesotho",
+    "timeZone": "Africa/Maseru",
+    "lat": -29.15299794,
+    "lon": 27.75300351
+  },
+  {
+    "country": "Matamoros - Mexico",
+    "timeZone": "America/Matamoros",
+    "lat": 26.07999595,
+    "lon": -98.30003117
+  },
+  {
+    "country": "Mauritius - Mauritius",
+    "timeZone": "Indian/Mauritius",
+    "lat": -20.31619017,
+    "lon": 57.51663367
+  },
+  {
+    "country": "Mayotte - Mayotte",
+    "timeZone": "Indian/Mayotte",
+    "lat": -12.78708901,
+    "lon": 45.27500362
+  },
+  {
+    "country": "Mazatlan - Mexico",
+    "timeZone": "America/Mazatlan",
+    "lat": 26.01333335,
+    "lon": -111.3516635
+  },
+  {
+    "country": "Mbabane - Eswatini",
+    "timeZone": "Africa/Mbabane",
+    "lat": -25.96100399,
+    "lon": 31.2470015
+  },
+  {
+    "country": "Melbourne - Australia",
+    "timeZone": "Australia/Melbourne",
+    "lat": -36.12959186,
+    "lon": 144.750017
+  },
+  {
+    "country": "Menominee - United States of America ",
+    "timeZone": "America/Menominee",
+    "lat": 45.82246014,
+    "lon": -88.06409265
+  },
+  {
+    "country": "Merida - Mexico",
+    "timeZone": "America/Merida",
+    "lat": 21.09998985,
+    "lon": -89.27998743
+  },
+  {
+    "country": "Mexico City - Mexico",
+    "timeZone": "America/Mexico_City",
+    "lat": 22.35001691,
+    "lon": -102.88001
+  },
+  {
+    "country": "Minsk - Belarus",
+    "timeZone": "Europe/Minsk",
+    "lat": 53.13684572,
+    "lon": 26.01344031
+  },
+  {
+    "country": "Mogadishu - Somalia",
+    "timeZone": "Africa/Mogadishu",
+    "lat": 4.183298973,
+    "lon": 43.86670261
+  },
+  {
+    "country": "Moncton - Canada",
+    "timeZone": "America/Moncton",
+    "lat": 45.26704185,
+    "lon": -66.07667505
+  },
+  {
+    "country": "Monrovia - Liberia",
+    "timeZone": "Africa/Monrovia",
+    "lat": 4.799996997,
+    "lon": -8.166698518
+  },
+  {
+    "country": "Monterrey - Mexico",
+    "timeZone": "America/Monterrey",
+    "lat": 28.32998781,
+    "lon": -100.8499789
+  },
+  {
+    "country": "Montevideo - Uruguay",
+    "timeZone": "America/Montevideo",
+    "lat": -34.47999901,
+    "lon": -57.84000247
+  },
+  {
+    "country": "Montreal - Canada",
+    "timeZone": "America/Montreal",
+    "lat": 49.82257774,
+    "lon": -64.34799504
+  },
+  {
+    "country": "Moscow - Russian Federation ",
+    "timeZone": "Europe/Moscow",
+    "lat": 43.23300312,
+    "lon": 44.78300151
+  },
+  {
+    "country": "Muscat - Oman",
+    "timeZone": "Asia/Muscat",
+    "lat": 23.3031887,
+    "lon": 57.97820756
+  },
+  {
+    "country": "Nairobi - Kenya",
+    "timeZone": "Africa/Nairobi",
+    "lat": -0.41699699,
+    "lon": 36.95100363
+  },
+  {
+    "country": "Nassau - Bahamas (The)",
+    "timeZone": "America/Nassau",
+    "lat": 26.53327578,
+    "lon": -78.70001306
+  },
+  {
+    "country": "Ndjamena - Chad",
+    "timeZone": "Africa/Ndjamena",
+    "lat": 9.395001123,
+    "lon": 16.30500349
+  },
+  {
+    "country": "New York - United States of America ",
+    "timeZone": "America/New_York",
+    "lat": 41.3555235,
+    "lon": -72.10002832
+  },
+  {
+    "country": "Niamey - Niger ",
+    "timeZone": "Africa/Niamey",
+    "lat": 13.98740074,
+    "lon": 10.2700085
+  },
+  {
+    "country": "Nicosia - Cyprus",
+    "timeZone": "Asia/Nicosia",
+    "lat": 34.9170031,
+    "lon": 33.63599757
+  },
+  {
+    "country": "Nipigon - Canada",
+    "timeZone": "America/Nipigon",
+    "lat": 49.01704551,
+    "lon": -88.24997278
+  },
+  {
+    "country": "Nome - United States of America ",
+    "timeZone": "America/Nome",
+    "lat": 60.38864671,
+    "lon": -166.1899372
+  },
+  {
+    "country": "Nouakchott - Mauritania",
+    "timeZone": "Africa/Nouakchott",
+    "lat": 22.67900113,
+    "lon": -12.70700053
+  },
+  {
+    "country": "Noumea - New Caledonia",
+    "timeZone": "Pacific/Noumea",
+    "lat": -22.26252776,
+    "lon": 166.4442852
+  },
+  {
+    "country": "Novokuznetsk - Russian Federation ",
+    "timeZone": "Asia/Novokuznetsk",
+    "lat": 54.66000856,
+    "lon": 86.16997514
+  },
+  {
+    "country": "Novosibirsk - Russian Federation ",
+    "timeZone": "Asia/Novosibirsk",
+    "lat": 54.65093935,
+    "lon": 83.28653357
+  },
+  {
+    "country": "Ojinaga - Mexico",
+    "timeZone": "America/Ojinaga",
+    "lat": 31.10002545,
+    "lon": -107.979983
+  },
+  {
+    "country": "Omsk - Russian Federation ",
+    "timeZone": "Asia/Omsk",
+    "lat": 54.16047833,
+    "lon": 74.82002193
+  },
+  {
+    "country": "Oral - Kazakhstan",
+    "timeZone": "Asia/Oral",
+    "lat": 50.19149579,
+    "lon": 51.14492956
+  },
+  {
+    "country": "Oslo - Norway",
+    "timeZone": "Europe/Oslo",
+    "lat": 58.46475606,
+    "lon": 8.766000553
+  },
+  {
+    "country": "Ouagadougou - Burkina Faso",
+    "timeZone": "Africa/Ouagadougou",
+    "lat": 12.05499605,
+    "lon": 0.360999451
+  },
+  {
+    "country": "Pago Pago - American Samoa",
+    "timeZone": "Pacific/Pago_Pago",
+    "lat": -14.2766105,
+    "lon": -170.7066451
+  },
+  {
+    "country": "Palau - Palau",
+    "timeZone": "Pacific/Palau",
+    "lat": 7.345226355,
+    "lon": 134.4695009
+  },
+  {
+    "country": "Panama - Panama",
+    "timeZone": "America/Panama",
+    "lat": 9.541686355,
+    "lon": -78.97196299
+  },
+  {
+    "country": "Pangnirtung - Canada",
+    "timeZone": "America/Pangnirtung",
+    "lat": 66.13331341,
+    "lon": -65.75002832
+  },
+  {
+    "country": "Paramaribo - Suriname",
+    "timeZone": "America/Paramaribo",
+    "lat": 5.599998125,
+    "lon": -55.19999648
+  },
+  {
+    "country": "Paris - France",
+    "timeZone": "Europe/Paris",
+    "lat": 45.89997479,
+    "lon": 6.116670287
+  },
+  {
+    "country": "Perth - Australia",
+    "timeZone": "Australia/Perth",
+    "lat": -33.58287392,
+    "lon": 120.0333345
+  },
+  {
+    "country": "Phnom Penh - Cambodia",
+    "timeZone": "Asia/Phnom_Penh",
+    "lat": 11.4519961,
+    "lon": 104.5189986
+  },
+  {
+    "country": "Phoenix - United States of America ",
+    "timeZone": "America/Phoenix",
+    "lat": 33.58194114,
+    "lon": -112.1958238
+  },
+  {
+    "country": "Podgorica - Montenegro",
+    "timeZone": "Europe/Podgorica",
+    "lat": 42.46597251,
+    "lon": 19.26630692
+  },
+  {
+    "country": "Pohnpei - Micronesia (Federated States of)",
+    "timeZone": "Pacific/Pohnpei",
+    "lat": 6.916643696,
+    "lon": 158.1499743
+  },
+  {
+    "country": "Pontianak - Indonesia",
+    "timeZone": "Asia/Pontianak",
+    "lat": 0.911980927,
+    "lon": 108.9654697
+  },
+  {
+    "country": "Port Moresby - Papua New Guinea",
+    "timeZone": "Pacific/Port_Moresby",
+    "lat": -5.490000005,
+    "lon": 143.7180037
+  },
+  {
+    "country": "Port of Spain - Trinidad and Tobago",
+    "timeZone": "America/Port_of_Spain",
+    "lat": 10.28046166,
+    "lon": -61.45937678
+  },
+  {
+    "country": "Port-au-Prince - Haiti",
+    "timeZone": "America/Port-au-Prince",
+    "lat": 18.63393473,
+    "lon": -74.11842526
+  },
+  {
+    "country": "Porto Velho - Brazil",
+    "timeZone": "America/Porto_Velho",
+    "lat": -11.64002724,
+    "lon": -61.20999536
+  },
+  {
+    "country": "Porto-Novo - Benin",
+    "timeZone": "Africa/Porto-Novo",
+    "lat": 6.615000092,
+    "lon": 1.715004457
+  },
+  {
+    "country": "Prague - Czechia",
+    "timeZone": "Europe/Prague",
+    "lat": 50.66299816,
+    "lon": 14.08100455
+  },
+  {
+    "country": "Puerto Rico - Puerto Rico",
+    "timeZone": "America/Puerto_Rico",
+    "lat": 18.00038576,
+    "lon": -66.61664209
+  },
+  {
+    "country": "Pyongyang - Korea (the Democratic People's Republic of)",
+    "timeZone": "Asia/Pyongyang",
+    "lat": 38.50700411,
+    "lon": 125.7620047
+  },
+  {
+    "country": "Qatar - Qatar",
+    "timeZone": "Asia/Qatar",
+    "lat": 25.28655601,
+    "lon": 51.53296789
+  },
+  {
+    "country": "Qyzylorda - Kazakhstan",
+    "timeZone": "Asia/Qyzylorda",
+    "lat": 49.62600011,
+    "lon": 63.49899651
+  },
+  {
+    "country": "Rangoon - Myanmar",
+    "timeZone": "Asia/Rangoon",
+    "lat": 19.66500009,
+    "lon": 97.20600363
+  },
+  {
+    "country": "Rankin Inlet - Canada",
+    "timeZone": "America/Rankin_Inlet",
+    "lat": 64.31699017,
+    "lon": -96.01665633
+  },
+  {
+    "country": "Rarotonga - Cook Islands ",
+    "timeZone": "Pacific/Rarotonga",
+    "lat": -21.25003497,
+    "lon": -159.7500013
+  },
+  {
+    "country": "Recife - Brazil",
+    "timeZone": "America/Recife",
+    "lat": -8.110010153,
+    "lon": -35.02004358
+  },
+  {
+    "country": "Regina - Canada",
+    "timeZone": "America/Regina",
+    "lat": 50.93331097,
+    "lon": -102.7999891
+  },
+  {
+    "country": "Resolute - Canada",
+    "timeZone": "America/Resolute",
+    "lat": 74.68333417,
+    "lon": -94.90000615
+  },
+  {
+    "country": "Reunion - Réunion",
+    "timeZone": "Indian/Reunion",
+    "lat": -21.03351072,
+    "lon": 55.71281612
+  },
+  {
+    "country": "Reykjavik - Iceland",
+    "timeZone": "Atlantic/Reykjavik",
+    "lat": 64.56950277,
+    "lon": -21.86232219
+  },
+  {
+    "country": "Riga - Latvia",
+    "timeZone": "Europe/Riga",
+    "lat": 56.50002545,
+    "lon": 27.3165649
+  },
+  {
+    "country": "Rio Branco - Bolivia (Plurinational State of)",
+    "timeZone": "America/Rio_Branco",
+    "lat": -11.03334593,
+    "lon": -68.73330876
+  },
+  {
+    "country": "Riyadh - Saudi Arabia",
+    "timeZone": "Asia/Riyadh",
+    "lat": 31.33330205,
+    "lon": 37.33329653
+  },
+  {
+    "country": "Rome - Italy",
+    "timeZone": "Europe/Rome",
+    "lat": 40.64200213,
+    "lon": 15.7989965
+  },
+  {
+    "country": "Saipan - Northern Mariana Islands ",
+    "timeZone": "Pacific/Saipan",
+    "lat": 15.21125368,
+    "lon": 145.7505761
+  },
+  {
+    "country": "Sakhalin - Russian Federation ",
+    "timeZone": "Asia/Sakhalin",
+    "lat": 49.08334637,
+    "lon": 142.0333353
+  },
+  {
+    "country": "Samara - Russian Federation ",
+    "timeZone": "Europe/Samara",
+    "lat": 52.97432334,
+    "lon": 49.72434444
+  },
+  {
+    "country": "Samarkand - Uzbekistan",
+    "timeZone": "Asia/Samarkand",
+    "lat": 42.4047101,
+    "lon": 59.45165767
+  },
+  {
+    "country": "San Marino - San Marino",
+    "timeZone": "Europe/San_Marino",
+    "lat": 43.91715008,
+    "lon": 12.46667029
+  },
+  {
+    "country": "Santarem - Brazil",
+    "timeZone": "America/Santarem",
+    "lat": -1.939585756,
+    "lon": -54.78999964
+  },
+  {
+    "country": "Santiago - Chile",
+    "timeZone": "America/Santiago",
+    "lat": -52.64997882,
+    "lon": -71.46660445
+  },
+  {
+    "country": "Santo Domingo - Dominican Republic ",
+    "timeZone": "America/Santo_Domingo",
+    "lat": 19.50499807,
+    "lon": -71.34498854
+  },
+  {
+    "country": "São Paulo - Brazil",
+    "timeZone": "America/Sao_Paulo",
+    "lat": -18.78000486,
+    "lon": -42.95002466
+  },
+  {
+    "country": "Sao Tome - Sao Tome and Principe",
+    "timeZone": "Africa/Sao_Tome",
+    "lat": 1.645002051,
+    "lon": 7.412004483
+  },
+  {
+    "country": "Sarajevo - Bosnia and Herzegovina",
+    "timeZone": "Europe/Sarajevo",
+    "lat": 44.21997398,
+    "lon": 17.91998083
+  },
+  {
+    "country": "Saratov - Russian Federation ",
+    "timeZone": "Europe/Saratov",
+    "lat": 51.50040814,
+    "lon": 46.12001664
+  },
+  {
+    "country": "Seoul - Korea (the Republic of)",
+    "timeZone": "Asia/Seoul",
+    "lat": 36.93525067,
+    "lon": 127.6897147
+  },
+  {
+    "country": "Shanghai - China",
+    "timeZone": "Asia/Shanghai",
+    "lat": 39.54005292,
+    "lon": 115.789976
+  },
+  {
+    "country": "Simferopol - Ukraine",
+    "timeZone": "Europe/Simferopol",
+    "lat": 45.71704022,
+    "lon": 34.4000085
+  },
+  {
+    "country": "Singapore - Singapore",
+    "timeZone": "Asia/Singapore",
+    "lat": 1.293033466,
+    "lon": 103.8558207
+  },
+  {
+    "country": "Sitka - United States of America ",
+    "timeZone": "America/Sitka",
+    "lat": 55.21397992,
+    "lon": -132.8006385
+  },
+  {
+    "country": "Skopje - North Macedonia",
+    "timeZone": "Europe/Skopje",
+    "lat": 42.00923037,
+    "lon": 20.9700789
+  },
+  {
+    "country": "Sofia - Bulgaria",
+    "timeZone": "Europe/Sofia",
+    "lat": 43.13799911,
+    "lon": 24.71900459
+  },
+  {
+    "country": "South Georgia - South Georgia and the South Sandwich Islands",
+    "timeZone": "Atlantic/South_Georgia",
+    "lat": -54.28057697,
+    "lon": -36.50798893
+  },
+  {
+    "country": "Srednekolymsk - Russian Federation ",
+    "timeZone": "Asia/Srednekolymsk",
+    "lat": 69.42444039,
+    "lon": 161.4811431
+  },
+  {
+    "country": "St Kitts - Saint Kitts and Nevis",
+    "timeZone": "America/St_Kitts",
+    "lat": 17.30203046,
+    "lon": -62.71700932
+  },
+  {
+    "country": "St Lucia - Saint Lucia",
+    "timeZone": "America/St_Lucia",
+    "lat": 14.00197349,
+    "lon": -61.00000818
+  },
+  {
+    "country": "St Thomas - Virgin Islands (U.S.)",
+    "timeZone": "America/St_Thomas",
+    "lat": 17.75037518,
+    "lon": -64.749986
+  },
+  {
+    "country": "St Vincent - Saint Vincent and the Grenadines",
+    "timeZone": "America/St_Vincent",
+    "lat": 13.14827883,
+    "lon": -61.21206242
+  },
+  {
+    "country": "St. John's - Canada",
+    "timeZone": "America/St_Johns",
+    "lat": 49.17440025,
+    "lon": -57.42691878
+  },
+  {
+    "country": "Stanley - Falkland Islands  [Malvinas]",
+    "timeZone": "Atlantic/Stanley",
+    "lat": -51.95058999,
+    "lon": -60.08696314
+  },
+  {
+    "country": "Stockholm - Sweden",
+    "timeZone": "Europe/Stockholm",
+    "lat": 60.61300204,
+    "lon": 15.64700455
+  },
+  {
+    "country": "Sydney - Australia",
+    "timeZone": "Australia/Sydney",
+    "lat": -33.42004148,
+    "lon": 151.3000048
+  },
+  {
+    "country": "Tahiti - French Polynesia",
+    "timeZone": "Pacific/Tahiti",
+    "lat": -17.53336261,
+    "lon": -149.5666694
+  },
+  {
+    "country": "Taipei - Taiwan (Province of China)",
+    "timeZone": "Asia/Taipei",
+    "lat": 24.9575,
+    "lon": 121.2988889
+  },
+  {
+    "country": "Tallinn - Estonia",
+    "timeZone": "Europe/Tallinn",
+    "lat": 58.9430556,
+    "lon": 23.5413889
+  },
+  {
+    "country": "Tarawa - Kiribati",
+    "timeZone": "Pacific/Tarawa",
+    "lat": 1.338187506,
+    "lon": 173.0175708
+  },
+  {
+    "country": "Tashkent - Uzbekistan",
+    "timeZone": "Asia/Tashkent",
+    "lat": 40.49573102,
+    "lon": 68.79072587
+  },
+  {
+    "country": "Tbilisi - Georgia",
+    "timeZone": "Asia/Tbilisi",
+    "lat": 42.24999086,
+    "lon": 42.72999101
+  },
+  {
+    "country": "Tegucigalpa - Honduras",
+    "timeZone": "America/Tegucigalpa",
+    "lat": 15.05999711,
+    "lon": -87.29000054
+  },
+  {
+    "country": "Tehran - Iran (Islamic Republic of)",
+    "timeZone": "Asia/Tehran",
+    "lat": 30.65900412,
+    "lon": 51.59400361
+  },
+  {
+    "country": "Thimphu - Bhutan",
+    "timeZone": "Asia/Thimphu",
+    "lat": 27.3833011,
+    "lon": 89.51670065
+  },
+  {
+    "country": "Thule - Greenland",
+    "timeZone": "America/Thule",
+    "lat": 76.01947624,
+    "lon": -65.11248065
+  },
+  {
+    "country": "Thunder Bay - Canada",
+    "timeZone": "America/Thunder_Bay",
+    "lat": 48.44615013,
+    "lon": -89.27497481
+  },
+  {
+    "country": "Tijuana - Mexico",
+    "timeZone": "America/Tijuana",
+    "lat": 30.76405113,
+    "lon": -116.0092603
+  },
+  {
+    "country": "Tirane - Albania",
+    "timeZone": "Europe/Tirane",
+    "lat": 41.51899817,
+    "lon": 19.79700359
+  },
+  {
+    "country": "Tokyo - Japan",
+    "timeZone": "Asia/Tokyo",
+    "lat": 34.67202964,
+    "lon": 133.9170865
+  },
+  {
+    "country": "Tomsk - Russian Federation ",
+    "timeZone": "Asia/Tomsk",
+    "lat": 56.49260988,
+    "lon": 84.90359249
+  },
+  {
+    "country": "Tongatapu - Tonga",
+    "timeZone": "Pacific/Tongatapu",
+    "lat": -18.64957355,
+    "lon": -173.9832927
+  },
+  {
+    "country": "Toronto - Canada",
+    "timeZone": "America/Toronto",
+    "lat": 44.56664532,
+    "lon": -80.84998519
+  },
+  {
+    "country": "Tripoli - Libya",
+    "timeZone": "Africa/Tripoli",
+    "lat": 30.1679118,
+    "lon": 10.45666378
+  },
+  {
+    "country": "Tunis - Tunisia",
+    "timeZone": "Africa/Tunis",
+    "lat": 33.399999,
+    "lon": 10.41669956
+  },
+  {
+    "country": "Ulaanbaatar - Mongolia",
+    "timeZone": "Asia/Ulaanbaatar",
+    "lat": 50.24999712,
+    "lon": 106.2000006
+  },
+  {
+    "country": "Ulyanovsk - Russian Federation ",
+    "timeZone": "Europe/Ulyanovsk",
+    "lat": 54.25042116,
+    "lon": 49.56001339
+  },
+  {
+    "country": "Urumqi - China",
+    "timeZone": "Asia/Urumqi",
+    "lat": 39.83003522,
+    "lon": 97.72999304
+  },
+  {
+    "country": "Ust-Nera - Russian Federation ",
+    "timeZone": "Asia/Ust-Nera",
+    "lat": 64.56658734,
+    "lon": 143.1999825
+  },
+  {
+    "country": "Uzhhorod - Ukraine",
+    "timeZone": "Europe/Uzhgorod",
+    "lat": 48.62998903,
+    "lon": 22.25000077
+  },
+  {
+    "country": "Vaduz - Liechtenstein",
+    "timeZone": "Europe/Vaduz",
+    "lat": 47.13372377,
+    "lon": 9.516669473
+  },
+  {
+    "country": "Vancouver - Canada",
+    "timeZone": "America/Vancouver",
+    "lat": 54.49999249,
+    "lon": -128.5833248
+  },
+  {
+    "country": "Vienna - Austria",
+    "timeZone": "Europe/Vienna",
+    "lat": 47.51669707,
+    "lon": 9.766701588
+  },
+  {
+    "country": "Vientiane - Lao People's Democratic Republic ",
+    "timeZone": "Asia/Vientiane",
+    "lat": 20.2775,
+    "lon": 100.4127778
+  },
+  {
+    "country": "Vilnius - Lithuania",
+    "timeZone": "Europe/Vilnius",
+    "lat": 55.74002016,
+    "lon": 24.37002641
+  },
+  {
+    "country": "Vladivostok - Russian Federation ",
+    "timeZone": "Asia/Vladivostok",
+    "lat": 44.16230308,
+    "lon": 133.2823449
+  },
+  {
+    "country": "Volgograd - Russian Federation ",
+    "timeZone": "Europe/Volgograd",
+    "lat": 50.01610598,
+    "lon": 45.42610551
+  },
+  {
+    "country": "Warsaw - Poland",
+    "timeZone": "Europe/Warsaw",
+    "lat": 53.80003522,
+    "lon": 20.48003129
+  },
+  {
+    "country": "Whitehorse - Canada",
+    "timeZone": "America/Whitehorse",
+    "lat": 61.35037539,
+    "lon": -139.0000017
+  },
+  {
+    "country": "Windhoek - Namibia",
+    "timeZone": "Africa/Windhoek",
+    "lat": -21.43600193,
+    "lon": 15.95099754
+  },
+  {
+    "country": "Winnipeg - Canada",
+    "timeZone": "America/Winnipeg",
+    "lat": 50.15002545,
+    "lon": -96.88332178
+  },
+  {
+    "country": "Yakutat - United States of America ",
+    "timeZone": "America/Yakutat",
+    "lat": 59.54730715,
+    "lon": -139.7272183
+  },
+  {
+    "country": "Yakutsk - Russian Federation ",
+    "timeZone": "Asia/Yakutsk",
+    "lat": 73.48330406,
+    "lon": 113.6300044
+  },
+  {
+    "country": "Yekaterinburg - Russian Federation ",
+    "timeZone": "Asia/Yekaterinburg",
+    "lat": 54.4599691,
+    "lon": 53.45998205
+  },
+  {
+    "country": "Yellowknife - Canada",
+    "timeZone": "America/Yellowknife",
+    "lat": 62.40005292,
+    "lon": -110.7333291
+  },
+  {
+    "country": "Yerevan - Armenia",
+    "timeZone": "Asia/Yerevan",
+    "lat": 40.3016667,
+    "lon": 44.3591667
+  },
+  {
+    "country": "Zagreb - Croatia",
+    "timeZone": "Europe/Zagreb",
+    "lat": 43.7272222,
+    "lon": 15.9058333
+  },
+  {
+    "country": "Zaporizhzhia - Ukraine",
+    "timeZone": "Europe/Zaporozhye",
+    "lat": 46.75682172,
+    "lon": 36.78683956
+  },
+  {
+    "country": "Zurich - Switzerland",
+    "timeZone": "Europe/Zurich",
+    "lat": 47.36999713,
+    "lon": 7.344999488
   }
 ]

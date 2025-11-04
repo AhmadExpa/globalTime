@@ -2,12 +2,28 @@ import axios from 'axios';
 const base = process.env.NEXT_PUBLIC_API_BASE;
 export const api = axios.create({ baseURL: base });
 export const subscribeNewsletter = (email) => api.post('/api/newsletter/subscribe', { email });
-export const worldClock = () => api.get('/api/worldclock');
+export const worldClock = ({ q = '', sort = 'country', dir = 'asc', limit = 100, offset = 0, country, tz } = {}) =>
+  api.get('/api/worldclock', { params: { q, sort, dir, limit, offset, country, tz } })
+    .then(r => r.data);
 export const worldClockDiff = (baseTz) => api.get('/api/worldclock/diff', { params: { base: baseTz } });
 export const fetchClocks = (token) => api.get('/api/clocks', { headers: { Authorization: `Bearer ${token}` } });
 export const createClock = (token, body) => api.post('/api/clocks', body, { headers: { Authorization: `Bearer ${token}` } });
 export const updateClock = (token, id, body) => api.put(`/api/clocks/${id}`, body, { headers: { Authorization: `Bearer ${token}` } });
 export const deleteClock = (token, id) => api.delete(`/api/clocks/${id}`, { headers: { Authorization: `Bearer ${token}` } });
+// ----- DST -----
+export const fetchDST = ({
+  q = '',
+  sort = 'country',
+  dir = 'asc',
+  limit = 100,
+  offset = 0,
+  country,
+  tz,
+  active = false,
+} = {}) =>
+  api
+    .get('/api/dst', { params: { q, sort, dir, limit, offset, country, tz, active } })
+    .then((r) => r.data);
 
 // ----- Events -----
 export const fetchEvents = (token) =>

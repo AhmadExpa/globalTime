@@ -1,8 +1,7 @@
 {
-  "/(site)/contact/page": "app/(site)/contact/page.js",
-  "/(site)/page": "app/(site)/page.js",
-  "/admin/contacts/page": "app/admin/contacts/page.js",
-  "/admin/users/page": "app/admin/users/page.js",
-  "/admin/account/page": "app/admin/account/page.js",
-  "/(site)/login/page": "app/(site)/login/page.js"
+  "/(site)/time-difference/page": "app/(site)/time-difference/page.js",
+  "/(site)/world-clock/page": "app/(site)/world-clock/page.js",
+  "/(site)/meeting/page": "app/(site)/meeting/page.js",
+  "/(site)/dst/page": "app/(site)/dst/page.js",
+  "/(site)/events/page": "app/(site)/events/page.js"
 }
