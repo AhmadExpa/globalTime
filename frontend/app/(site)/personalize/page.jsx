@@ -388,7 +388,7 @@ export default function Personalize() {
       >
         <div className="text-lg font-semibold">Your clocks</div>
         <div className="text-xs text-slate-500 mb-3">
-          Guests 2 (session) • Free=2 • Pro=4
+          Guests 2 (session) • Free=3 • Pro=6
         </div>
 
         <AnimatePresence initial={false}>

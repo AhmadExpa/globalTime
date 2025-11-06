@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/(site)/time-difference/page": [
+    "/(site)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(site)/time-difference/page.js"
+      "static/chunks/app/(site)/page.js"
     ],
     "/(site)/layout": [
       "static/chunks/webpack.js",
@@ -15,36 +15,6 @@
       "static/chunks/main-app.js",
       "static/css/css-app_globals_css.css",
       "static/chunks/app/layout.js"
-    ],
-    "/(site)/world-clock/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(site)/world-clock/page.js"
-    ],
-    "/(site)/meeting/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(site)/meeting/page.js"
-    ],
-    "/(site)/events/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(site)/events/page.js"
-    ],
-    "/(site)/personalize/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(site)/personalize/page.js"
-    ],
-    "/(site)/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(site)/page.js"
-    ],
-    "/(site)/dst/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(site)/dst/page.js"
     ]
   }
 }

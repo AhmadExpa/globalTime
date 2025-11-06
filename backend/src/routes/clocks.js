@@ -5,8 +5,8 @@ const User = require('../models/User');
 
 function maxClocks(role) {
   if (role === 'admin') return 9999;
-  if (role === 'pro') return 4;
-  return 2;
+  if (role === 'pro') return 6;
+  return 3;
 }
 
 const router = express.Router();

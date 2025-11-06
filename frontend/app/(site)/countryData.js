@@ -12,7 +12,7 @@ export const COUNTRIES = [
     "lon": -2.336003416
   },
   {
-    "country": "Adak - United States of America ",
+    "country": "Adak - USA ",
     "timeZone": "America/Adak",
     "lat": 52.19648968,
     "lon": -174.2004887
@@ -54,7 +54,7 @@ export const COUNTRIES = [
     "lon": 36.23329852
   },
   {
-    "country": "Amsterdam - Netherlands (Kingdom of the)",
+    "country": "Amsterdam - Netherlands",
     "timeZone": "Europe/Amsterdam",
     "lat": 53.00000109,
     "lon": 6.550002585
@@ -66,7 +66,7 @@ export const COUNTRIES = [
     "lon": -171.8166032
   },
   {
-    "country": "Anchorage - United States of America ",
+    "country": "Anchorage - USA ",
     "timeZone": "America/Anchorage",
     "lat": 55.33970868,
     "lon": -160.4971908
@@ -306,7 +306,7 @@ export const COUNTRIES = [
     "lon": -72.4059986
   },
   {
-    "country": "Boise - United States of America ",
+    "country": "Boise - USA ",
     "timeZone": "America/Boise",
     "lat": 42.53581321,
     "lon": -113.7918763
@@ -408,7 +408,7 @@ export const COUNTRIES = [
     "lon": -25.0000092
   },
   {
-    "country": "Caracas - Venezuela (Bolivarian Republic of)",
+    "country": "Caracas - Venezuela",
     "timeZone": "America/Caracas",
     "lat": 9.657999007,
     "lon": -68.58999854
@@ -438,7 +438,7 @@ export const COUNTRIES = [
     "lon": -5.30699935
   },
   {
-    "country": "Chicago - United States of America ",
+    "country": "Chicago - USA ",
     "timeZone": "America/Chicago",
     "lat": 44.29048647,
     "lon": -93.26801274
@@ -450,7 +450,7 @@ export const COUNTRIES = [
     "lon": -105.6666358
   },
   {
-    "country": "Chisinau - Moldova (the Republic of)",
+    "country": "Chisinau - Moldova",
     "timeZone": "Europe/Chisinau",
     "lat": 47.2630556,
     "lon": 29.1608333
@@ -534,7 +534,7 @@ export const COUNTRIES = [
     "lon": -16.51001062
   },
   {
-    "country": "Damascus - Syrian Arab Republic ",
+    "country": "Damascus - Syrian ",
     "timeZone": "Asia/Damascus",
     "lat": 32.62500014,
     "lon": 36.10500351
@@ -546,7 +546,7 @@ export const COUNTRIES = [
     "lon": -21.9666543
   },
   {
-    "country": "Dar es Salaam - Tanzania, the United Republic of",
+    "country": "Dar es Salaam - Tanzania",
     "timeZone": "Africa/Dar_es_Salaam",
     "lat": -5.063463959,
     "lon": 39.725799
@@ -570,7 +570,7 @@ export const COUNTRIES = [
     "lon": -120.233266
   },
   {
-    "country": "Denver - United States of America ",
+    "country": "Denver - USA ",
     "timeZone": "America/Denver",
     "lat": 45.731768,
     "lon": -107.612486
@@ -612,7 +612,7 @@ export const COUNTRIES = [
     "lon": 9.231003513
   },
   {
-    "country": "Dubai - United Arab Emirates ",
+    "country": "Dubai - UAE ",
     "timeZone": "Asia/Dubai",
     "lat": 25.56527285,
     "lon": 55.55334265
@@ -852,7 +852,7 @@ export const COUNTRIES = [
     "lon": 114.1850093
   },
   {
-    "country": "Honolulu - United States of America ",
+    "country": "Honolulu - USA ",
     "timeZone": "Pacific/Honolulu",
     "lat": 21.98151227,
     "lon": -159.3710063
@@ -930,7 +930,7 @@ export const COUNTRIES = [
     "lon": 29.8333333
   },
   {
-    "country": "Juneau - United States of America ",
+    "country": "Juneau - USA ",
     "timeZone": "America/Juneau",
     "lat": 58.11540489,
     "lon": -135.438617
@@ -996,7 +996,7 @@ export const COUNTRIES = [
     "lon": 29.5667016
   },
   {
-    "country": "Kinshasa - Congo (the Democratic Republic of the)",
+    "country": "Kinshasa - Congo ",
     "timeZone": "Africa/Kinshasa",
     "lat": 4.330341613,
     "lon": 18.61502885
@@ -1044,7 +1044,7 @@ export const COUNTRIES = [
     "lon": 31.984342
   },
   {
-    "country": "La Paz - Bolivia (Plurinational State of)",
+    "country": "La Paz - Bolivia ",
     "timeZone": "America/La_Paz",
     "lat": -17.55000242,
     "lon": -65.83997115
@@ -1062,7 +1062,7 @@ export const COUNTRIES = [
     "lon": 11.02699849
   },
   {
-    "country": "Lima - Bolivia (Plurinational State of)",
+    "country": "Lima - Bolivia ",
     "timeZone": "America/Lima",
     "lat": -12.49961302,
     "lon": -68.66656865
@@ -1086,7 +1086,7 @@ export const COUNTRIES = [
     "lon": 0.789003574
   },
   {
-    "country": "London - United Kingdom of Great Britain and Northern Ireland ",
+    "country": "London - United Kingdom ",
     "timeZone": "Europe/London",
     "lat": 55.93329002,
     "lon": -4.750030763
@@ -1098,7 +1098,7 @@ export const COUNTRIES = [
     "lon": 15.5499963
   },
   {
-    "country": "Los Angeles - United States of America ",
+    "country": "Los Angeles - USA ",
     "timeZone": "America/Los_Angeles",
     "lat": 47.47421979,
     "lon": -115.9268881
@@ -1110,7 +1110,7 @@ export const COUNTRIES = [
     "lon": 21.42999914
   },
   {
-    "country": "Lubumbashi - Congo (the Democratic Republic of the)",
+    "country": "Lubumbashi - Congo ",
     "timeZone": "Africa/Lubumbashi",
     "lat": -0.756998889,
     "lon": 28.52800254
@@ -1272,7 +1272,7 @@ export const COUNTRIES = [
     "lon": 144.750017
   },
   {
-    "country": "Menominee - United States of America ",
+    "country": "Menominee - USA ",
     "timeZone": "America/Menominee",
     "lat": 45.82246014,
     "lon": -88.06409265
@@ -1350,7 +1350,7 @@ export const COUNTRIES = [
     "lon": 36.95100363
   },
   {
-    "country": "Nassau - Bahamas (The)",
+    "country": "Nassau - Bahamas ",
     "timeZone": "America/Nassau",
     "lat": 26.53327578,
     "lon": -78.70001306
@@ -1362,7 +1362,7 @@ export const COUNTRIES = [
     "lon": 16.30500349
   },
   {
-    "country": "New York - United States of America ",
+    "country": "New York - USA ",
     "timeZone": "America/New_York",
     "lat": 41.3555235,
     "lon": -72.10002832
@@ -1386,7 +1386,7 @@ export const COUNTRIES = [
     "lon": -88.24997278
   },
   {
-    "country": "Nome - United States of America ",
+    "country": "Nome - USA ",
     "timeZone": "America/Nome",
     "lat": 60.38864671,
     "lon": -166.1899372
@@ -1494,7 +1494,7 @@ export const COUNTRIES = [
     "lon": 104.5189986
   },
   {
-    "country": "Phoenix - United States of America ",
+    "country": "Phoenix - USA ",
     "timeZone": "America/Phoenix",
     "lat": 33.58194114,
     "lon": -112.1958238
@@ -1506,7 +1506,7 @@ export const COUNTRIES = [
     "lon": 19.26630692
   },
   {
-    "country": "Pohnpei - Micronesia (Federated States of)",
+    "country": "Pohnpei - Micronesia ",
     "timeZone": "Pacific/Pohnpei",
     "lat": 6.916643696,
     "lon": 158.1499743
@@ -1560,7 +1560,7 @@ export const COUNTRIES = [
     "lon": -66.61664209
   },
   {
-    "country": "Pyongyang - Korea (the Democratic People's Republic of)",
+    "country": "Pyongyang - Korea",
     "timeZone": "Asia/Pyongyang",
     "lat": 38.50700411,
     "lon": 125.7620047
@@ -1632,7 +1632,7 @@ export const COUNTRIES = [
     "lon": 27.3165649
   },
   {
-    "country": "Rio Branco - Bolivia (Plurinational State of)",
+    "country": "Rio Branco - Bolivia ",
     "timeZone": "America/Rio_Branco",
     "lat": -11.03334593,
     "lon": -68.73330876
@@ -1722,7 +1722,7 @@ export const COUNTRIES = [
     "lon": 46.12001664
   },
   {
-    "country": "Seoul - Korea (the Republic of)",
+    "country": "Seoul - Korea",
     "timeZone": "Asia/Seoul",
     "lat": 36.93525067,
     "lon": 127.6897147
@@ -1746,7 +1746,7 @@ export const COUNTRIES = [
     "lon": 103.8558207
   },
   {
-    "country": "Sitka - United States of America ",
+    "country": "Sitka - USA ",
     "timeZone": "America/Sitka",
     "lat": 55.21397992,
     "lon": -132.8006385
@@ -1788,7 +1788,7 @@ export const COUNTRIES = [
     "lon": -61.00000818
   },
   {
-    "country": "St Thomas - Virgin Islands (U.S.)",
+    "country": "St Thomas - Virgin Islands (U.S)",
     "timeZone": "America/St_Thomas",
     "lat": 17.75037518,
     "lon": -64.749986
@@ -1866,7 +1866,7 @@ export const COUNTRIES = [
     "lon": -87.29000054
   },
   {
-    "country": "Tehran - Iran (Islamic Republic of)",
+    "country": "Tehran - Iran ",
     "timeZone": "Asia/Tehran",
     "lat": 30.65900412,
     "lon": 51.59400361
@@ -2034,7 +2034,7 @@ export const COUNTRIES = [
     "lon": -96.88332178
   },
   {
-    "country": "Yakutat - United States of America ",
+    "country": "Yakutat - USA ",
     "timeZone": "America/Yakutat",
     "lat": 59.54730715,
     "lon": -139.7272183
